@@ -433,7 +433,7 @@ class ViewTaskTest extends CakeTestCase {
 			);
 		$this->Task->expects($this->at(1))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'add.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->anything()
 			);
 		$this->Task->expects($this->exactly(2))->method('createFile');
@@ -494,7 +494,7 @@ class ViewTaskTest extends CakeTestCase {
 			);
 		$this->Task->expects($this->at(1))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'add.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->anything()
 			);
 		$this->Task->expects($this->exactly(2))->method('createFile');
@@ -527,7 +527,7 @@ class ViewTaskTest extends CakeTestCase {
 			);
 		$this->Task->expects($this->at(1))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'add.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->anything()
 			);
 		$this->Task->execute();
@@ -591,7 +591,7 @@ class ViewTaskTest extends CakeTestCase {
 
 		$this->Task->expects($this->at(5))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'add.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->stringContains('Add View Task Comment')
 			);
 

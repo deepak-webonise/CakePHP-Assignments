@@ -20,6 +20,10 @@ class PostsController extends AppController {
      * @description:
      */
     public function add() {
+        $this->loadModel('Category');
+
+        $categories = $this->Category->find('list');
+        $this->set(compact('categories'));
         if ($this->request->is('post')) {
 
             if ($this->Post->addPost($this->request->data)) {

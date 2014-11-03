@@ -10,6 +10,12 @@ class Post extends AppModel
 			'rule' => 'notEmpty'
 		)
 	);
+    public $belongsTo = array(
+        'Category' => array(
+            'className' => 'Category',
+            'foreignKey' => 'category_id'
+        )
+    );
 
     /**
      * @return array
@@ -17,7 +23,9 @@ class Post extends AppModel
 
     public function findPosts(){
 
-       return $this->find('all');
+       return $this->find('all', array(
+           'recursive'=> -1
+       ));
 
     }
 

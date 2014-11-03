@@ -39,6 +39,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link($cakeDescription, '#'); ?></h1>
+			<?php echo $this->html->link('Latest Posts',array('controller'=>'posts'));?>
+			<?php echo $this->Html->link('Categories',array('controller'=>'categories','action'=>'index'));?>
 		</div>
 		<div id="content">
 
@@ -52,6 +54,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</p>
 		</div>
 	</div>
-	<?php //echo $this->element('sql_dump'); ?>
+	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
