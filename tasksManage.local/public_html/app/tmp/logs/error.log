@@ -1,0 +1,379 @@
+2014-11-04 14:14:51 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Tasks/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Tasks/index.ctp',
+)
+Request URL: /tasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-04 14:25:22 Error: [MissingControllerException] Controller class TechnologiesController could not be found.
+Exception Attributes: array (
+  'class' => 'TechnologiesController',
+  'plugin' => NULL,
+)
+Request URL: /technologies
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-04 14:25:58 Error: [MissingControllerException] Controller class TechnologiesController could not be found.
+Exception Attributes: array (
+  'class' => 'TechnologiesController',
+  'plugin' => NULL,
+)
+Request URL: /technologies
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-04 14:45:48 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/tasksManage.local/public_html/app/Controller/TasksController.php, line 23]
+2014-11-04 14:45:48 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/tasksM...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/tasksM...', 23, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/tasksM...', 23, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 14:49:44 Error: Fatal Error (1): Call to undefined function now() in [/var/www/tasksManage.local/public_html/app/View/Tasks/add.ctp, line 3]
+2014-11-04 14:49:44 Error: [FatalErrorException] Call to undefined function now()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 3, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 3, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 14:50:44 Error: Fatal Error (1): Call to undefined function CURDATE() in [/var/www/tasksManage.local/public_html/app/View/Tasks/add.ctp, line 3]
+2014-11-04 14:50:44 Error: [FatalErrorException] Call to undefined function CURDATE()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 3, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 3, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 15:03:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'dsc ASC  LIMIT 10' at line 1
+Request URL: /tasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Task`.`...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/app/Model/Task.php(21): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(13): Task->taskByDate()
+#8 [internal function]: TasksController->index()
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-04 15:16:59 Error: Fatal Error (1): Call to undefined function input() in [/var/www/tasksManage.local/public_html/app/View/Tasks/edit.ctp, line 10]
+2014-11-04 15:16:59 Error: [FatalErrorException] Call to undefined function input()
+Request URL: /tasks/edit/1
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 10, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 10, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 15:40:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findId' at line 1
+Request URL: /tasks/edit/2
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('findId', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('findId', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('findId', Array, Array)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(808): DboSource->query('findId', Array, Object(Task))
+#5 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(37): Model->__call('findId', Array)
+#6 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(37): Task->findId('2')
+#7 [internal function]: TasksController->edit('2')
+#8 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-04 15:47:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'editTask' at line 1
+Request URL: /tasks/edit/1
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('editTask', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('editTask', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('editTask', Array, Array)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(808): DboSource->query('editTask', Array, Object(Task))
+#5 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(54): Model->__call('editTask', Array)
+#6 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(54): Task->editTask(Array)
+#7 [internal function]: TasksController->edit('1')
+#8 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-04 17:22:37 Error: Fatal Error (1): Call to undefined function aray() in [/var/www/tasksManage.local/public_html/app/View/Tasks/index.ctp, line 15]
+2014-11-04 17:22:37 Error: [FatalErrorException] Call to undefined function aray()
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 15, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 15, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 17:30:52 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp',
+)
+Request URL: /tasks/delete/1
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-04 17:35:09 Error: [MethodNotAllowedException] Not Allowed to Delete
+Request URL: /tasks/delete/1
+Stack Trace:
+#0 [internal function]: TasksController->delete('1')
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-04 17:35:20 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp',
+)
+Request URL: /tasks/delete/1
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-04 17:36:53 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp',
+)
+Request URL: /tasks/delete/1
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-04 17:38:32 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp',
+)
+Request URL: /tasks/delete/2
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-04 17:40:40 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Tasks/delete.ctp',
+)
+Request URL: /tasks/delete/2
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-04 18:18:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Task`.`...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/app/Model/Task.php(32): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(13): Task->taskByDate()
+#8 [internal function]: TasksController->index()
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-04 18:18:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Task`.`...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/app/Model/Task.php(32): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(13): Task->taskByDate()
+#8 [internal function]: TasksController->index()
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-04 18:18:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Task`.`...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/app/Model/Task.php(32): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(13): Task->taskByDate()
+#8 [internal function]: TasksController->index()
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-04 18:18:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Task`.`...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/app/Model/Task.php(32): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(13): Task->taskByDate()
+#8 [internal function]: TasksController->index()
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-04 18:47:12 Error: Fatal Error (1): Cannot use string offset as an array in [/var/www/tasksManage.local/public_html/app/View/Tasks/index.ctp, line 20]
+2014-11-04 18:47:12 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/var/www/tasksM...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/var/www/tasksM...', 20, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/var/www/tasksM...', 20, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 19:07:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SEPERATOR ,) FROM `task_management`.`tasks` AS `Task`   WHERE 1 = 1  GROUP BY cr' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT count(cr...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT count(cr...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT count(cr...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/app/Model/Task.php(51): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(13): Task->taskByDate()
+#8 [internal function]: TasksController->index()
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-04 19:08:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') FROM `task_management`.`tasks` AS `Task`   WHERE 1 = 1  GROUP BY created   LIM' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT count(cr...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT count(cr...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT count(cr...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/app/Model/Task.php(51): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(13): Task->taskByDate()
+#8 [internal function]: TasksController->index()
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-04 19:41:56 Error: Fatal Error (1): Call to a member function taskByGroup() on a non-object in [/var/www/tasksManage.local/public_html/app/Controller/TasksController.php, line 14]
+2014-11-04 19:41:56 Error: [FatalErrorException] Call to a member function taskByGroup() on a non-object
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/tasksM...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/tasksM...', 14, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/tasksM...', 14, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 19:53:33 Error: Fatal Error (1): Call to undefined function CURDATE() in [/var/www/tasksManage.local/public_html/app/Model/Task.php, line 47]
+2014-11-04 19:53:33 Error: [FatalErrorException] Call to undefined function CURDATE()
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 19:55:34 Error: Fatal Error (1): Call to undefined function CURDATE() in [/var/www/tasksManage.local/public_html/app/Model/Task.php, line 47]
+2014-11-04 19:55:34 Error: [FatalErrorException] Call to undefined function CURDATE()
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 19:55:36 Error: Fatal Error (1): Call to undefined function CURDATE() in [/var/www/tasksManage.local/public_html/app/Model/Task.php, line 47]
+2014-11-04 19:55:36 Error: [FatalErrorException] Call to undefined function CURDATE()
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 19:55:45 Error: Fatal Error (1): Call to undefined function CURDATE() in [/var/www/tasksManage.local/public_html/app/Model/Task.php, line 47]
+2014-11-04 19:55:45 Error: [FatalErrorException] Call to undefined function CURDATE()
+Request URL: /tasks/
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/tasksM...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/tasksM...', 47, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 20:41:06 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/tasksManage.local/public_html/app/View/Tasks/index.ctp, line 4]
+2014-11-04 20:41:06 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/tasksM...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/tasksM...', 4, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/tasksM...', 4, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-04 20:41:56 Error: [MissingControllerException] Controller class TehnologiesController could not be found.
+Exception Attributes: array (
+  'class' => 'TehnologiesController',
+  'plugin' => NULL,
+)
+Request URL: /tehnologies
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
