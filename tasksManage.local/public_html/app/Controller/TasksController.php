@@ -9,15 +9,29 @@
 class TasksController extends AppController {
 
 
+    /**
+     * Description : categories the tasks by date and group
+     */
     public function index(){
+
         $this->set('tasks',$this->Task->taskByDate());
         $this->set('group',$this->Task->taskByGroup());
+    }
+
+    /**
+     * Allow index action to all
+     */
+
+    public function beforeFilter(){
+        $this->Auth->allow('index', 'view');
+
     }
 
     /**
      * Add new task
      */
     public function add(){
+
         $this->loadModel('Technology');
         $this->loadModel('Type');
         /*Load Technologies*/
@@ -72,6 +86,10 @@ class TasksController extends AppController {
         }
     }
 
+    /**
+     * @param null $id
+     * @throws NotFoundException
+     */
     public function view($id=null)
     {
        if(!$id){
@@ -80,6 +98,10 @@ class TasksController extends AppController {
         $this->set('task',$this->Task->taskById($id));
     }
 
+    /**
+     * @param null $id
+     * @throws MethodNotAllowedException
+     */
     public function delete($id= null)
     {
         if($this->request->is('get')){

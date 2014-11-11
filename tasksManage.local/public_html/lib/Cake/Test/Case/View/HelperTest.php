@@ -168,7 +168,7 @@ class TestHelper extends Helper {
 	);
 
 /**
- * Helpers for this helper.
+ * Helper for this helper.
  *
  * @var array
  */

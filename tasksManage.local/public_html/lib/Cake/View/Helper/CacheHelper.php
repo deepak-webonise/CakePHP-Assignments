@@ -77,7 +77,7 @@ class CacheHelper extends AppHelper {
 /**
  * Parses the layout file and stores content for cache file building.
  *
- * @param string $layoutFile Layout file name.
+ * @param string $layoutFile Layouts file name.
  * @return void
  */
 	public function afterLayout($layoutFile) {

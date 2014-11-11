@@ -205,7 +205,7 @@ class ControllerMergeVarsTest extends CakeTestCase {
 			'MergeVar' => array('format' => 'html', 'terse'),
 			'Js' => null
 		);
-		$this->assertEquals($expected, $Controller->helpers, 'Helpers are unexpected.');
+		$this->assertEquals($expected, $Controller->helpers, 'Helper are unexpected.');
 
 		$Controller = new MergePostsController();
 		$Controller->components = array();

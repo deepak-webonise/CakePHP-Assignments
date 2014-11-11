@@ -31,7 +31,7 @@ App::uses('Xml', 'Utility');
 class RssHelper extends AppHelper {
 
 /**
- * Helpers used by RSS Helper
+ * Helper used by RSS Helper
  *
  * @var array
  */

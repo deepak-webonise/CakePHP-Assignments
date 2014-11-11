@@ -846,7 +846,7 @@ class RequestHandlerComponentTest extends CakeTestCase {
 		);
 		$result = ob_get_clean();
 		$this->assertRegExp('/posts index/', $result, 'RequestAction redirect failed.');
-		$this->assertRegExp('/Ajax!/', $result, 'Layout was not rendered.');
+		$this->assertRegExp('/Ajax!/', $result, 'Layouts was not rendered.');
 
 		App::build();
 	}

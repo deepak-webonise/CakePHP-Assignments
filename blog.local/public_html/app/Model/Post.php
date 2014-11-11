@@ -14,6 +14,10 @@ class Post extends AppModel
         'Category' => array(
             'className' => 'Category',
             'foreignKey' => 'category_id'
+        ),
+        'Users' => array(
+            'className'=> 'User',
+            'foreignKey'=>'user_id'
         )
     );
 
@@ -24,7 +28,7 @@ class Post extends AppModel
     public function findPosts(){
 
        return $this->find('all', array(
-           'recursive'=> -1
+           'recursive'=> 2
        ));
 
     }

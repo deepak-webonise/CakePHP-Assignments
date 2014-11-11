@@ -243,7 +243,7 @@ class ControllerTask extends BakeTask {
 		}
 
 		$properties = array(
-			'helpers' => __d('cake_console', 'Helpers:'),
+			'helpers' => __d('cake_console', 'Helper:'),
 			'components' => __d('cake_console', 'Components:'),
 		);
 
@@ -324,7 +324,7 @@ class ControllerTask extends BakeTask {
  *
  * @param string $controllerName Controller name already pluralized and correctly cased.
  * @param string $actions Actions to add, or set the whole controller to use $scaffold (set $actions to 'scaffold')
- * @param array $helpers Helpers to use in controller
+ * @param array $helpers Helper to use in controller
  * @param array $components Components to use in controller
  * @return string Baked controller
  */
@@ -369,7 +369,7 @@ class ControllerTask extends BakeTask {
 /**
  * Interact with the user and get a list of additional helpers
  *
- * @return array Helpers that the user wants to use.
+ * @return array Helper that the user wants to use.
  */
 	public function doHelpers() {
 		return $this->_doPropertyChoices(

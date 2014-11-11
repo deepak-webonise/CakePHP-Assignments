@@ -19,7 +19,7 @@ App::uses('Hash', 'Utility');
 App::uses('Inflector', 'Utility');
 
 /**
- * Abstract base class for all other Helpers in CakePHP.
+ * Abstract base class for all other Helper in CakePHP.
  * Provides common methods and features.
  *
  * @package       Cake.View

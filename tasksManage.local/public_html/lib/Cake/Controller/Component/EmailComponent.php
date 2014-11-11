@@ -125,7 +125,7 @@ class EmailComponent extends Component {
 	public $additionalParams = null;
 
 /**
- * Layout for the View
+ * Layouts for the View
  *
  * @var string
  */
@@ -281,7 +281,7 @@ class EmailComponent extends Component {
  * @param string|array $content Either an array of text lines, or a string with contents
  *  If you are rendering a template this variable will be sent to the templates as `$content`
  * @param string $template Template to use when sending email
- * @param string $layout Layout to use to enclose email body
+ * @param string $layout Layouts to use to enclose email body
  * @return bool Success
  */
 	public function send($content = null, $template = null, $layout = null) {

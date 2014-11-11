@@ -168,7 +168,7 @@ class CakeEmail {
 	protected $_headers = array();
 
 /**
- * Layout for the View
+ * Layouts for the View
  *
  * @var string
  */
@@ -203,7 +203,7 @@ class CakeEmail {
 	protected $_theme = null;
 
 /**
- * Helpers to be used in the render
+ * Helper to be used in the render
  *
  * @var array
  */
@@ -828,7 +828,7 @@ class CakeEmail {
  * Template and layout
  *
  * @param bool|string $template Template name or null to not use
- * @param bool|string $layout Layout name or null to not use
+ * @param bool|string $layout Layouts name or null to not use
  * @return array|$this
  */
 	public function template($template = false, $layout = false) {
@@ -888,9 +888,9 @@ class CakeEmail {
 	}
 
 /**
- * Helpers to be used in render
+ * Helper to be used in render
  *
- * @param array $helpers Helpers list.
+ * @param array $helpers Helper list.
  * @return array|$this
  */
 	public function helpers($helpers = null) {

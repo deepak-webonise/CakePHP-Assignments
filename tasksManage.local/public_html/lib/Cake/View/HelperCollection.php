@@ -1,6 +1,6 @@
 <?php
 /**
- * Helpers collection is used as a registry for loaded helpers and handles loading
+ * Helper collection is used as a registry for loaded helpers and handles loading
  * and constructing helper class objects.
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
@@ -21,7 +21,7 @@ App::uses('ObjectCollection', 'Utility');
 App::uses('CakeEventListener', 'Event');
 
 /**
- * Helpers collection is used as a registry for loaded helpers and handles loading
+ * Helper collection is used as a registry for loaded helpers and handles loading
  * and constructing helper class objects.
  *
  * @package       Cake.View

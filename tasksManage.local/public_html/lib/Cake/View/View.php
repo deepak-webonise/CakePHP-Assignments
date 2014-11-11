@@ -25,7 +25,7 @@ App::uses('CakeEventManager', 'Event');
 App::uses('CakeResponse', 'Network');
 
 /**
- * View, the V in the MVC triad. View interacts with Helpers and view variables passed
+ * View, the V in the MVC triad. View interacts with Helper and view variables passed
  * in from the controller to render the results of the controller action. Often this is HTML,
  * but can also take the form of JSON, XML, PDF's or streaming files.
  *
@@ -56,7 +56,7 @@ App::uses('CakeResponse', 'Network');
 class View extends Object {
 
 /**
- * Helpers collection
+ * Helper collection
  *
  * @var HelperCollection
  */
@@ -127,7 +127,7 @@ class View extends Object {
 	public $layout = 'default';
 
 /**
- * Path to Layout.
+ * Path to Layouts.
  *
  * @var string
  */
@@ -456,7 +456,7 @@ class View extends Object {
  * the view will be located along the regular view path cascade.
  *
  * @param string $view Name of view file to use
- * @param string $layout Layout to use.
+ * @param string $layout Layouts to use.
  * @return string|null Rendered content or null if content already rendered and returned earlier.
  * @throws CakeException If there is an error in the view.
  */
@@ -502,7 +502,7 @@ class View extends Object {
  *   Use the `content` block instead.
  *
  * @param string $content Content to render in a view, wrapped by the surrounding layout.
- * @param string $layout Layout name
+ * @param string $layout Layouts name
  * @return mixed Rendered output, or false on error
  * @throws CakeException if there is an error in the view.
  */

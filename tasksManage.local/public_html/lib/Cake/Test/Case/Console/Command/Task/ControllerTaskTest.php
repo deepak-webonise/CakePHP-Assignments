@@ -265,7 +265,7 @@ class ControllerTaskTest extends CakeTestCase {
 		$components = array('Acl', 'Auth');
 
 		$this->Task->expects($this->at(4))->method('out')->with("Controller Name:\n\t$controller");
-		$this->Task->expects($this->at(5))->method('out')->with("Helpers:\n\tJs, Time");
+		$this->Task->expects($this->at(5))->method('out')->with("Helper:\n\tJs, Time");
 		$this->Task->expects($this->at(6))->method('out')->with("Components:\n\tAcl, Auth");
 		$this->Task->confirmController($controller, $scaffold, $helpers, $components);
 	}

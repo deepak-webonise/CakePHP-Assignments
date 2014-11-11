@@ -9,7 +9,7 @@
 
 class Task extends AppModel {
 
-    public $validate = array(
+   /* public $validate = array(
         'title' => array(
             'required'=> 'true',
         ),
@@ -25,7 +25,7 @@ class Task extends AppModel {
         'type_id' => array(
             'required' =>'true'
         )
-    );
+    );*/
     public $belongsTo = array(
         'Technology' => array(
             'className' => 'Technology',
@@ -69,7 +69,7 @@ class Task extends AppModel {
         ));
     }
 
-    
+
     /**
      * @param null $id
      * @return array
@@ -82,6 +82,7 @@ class Task extends AppModel {
                 'condition' => array('Task.id' => $id)
             ));
         }
+
     }
 
     /**

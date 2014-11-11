@@ -235,7 +235,7 @@ class ThemeViewTest extends CakeTestCase {
 		ob_start();
 		$View->getLayoutFileName();
 		$expected = ob_get_clean();
-		$this->assertRegExp("/Missing Layout/", $expected);
+		$this->assertRegExp("/Missing Layouts/", $expected);
 		$this->assertRegExp("/views(\/|\\\)themed(\/|\\\)my_theme(\/|\\\)layouts(\/|\\\)whatever.ctp/", $expected);
 	}
 

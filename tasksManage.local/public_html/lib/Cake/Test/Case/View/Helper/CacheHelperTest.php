@@ -247,13 +247,13 @@ class CacheHelperTest extends CakeTestCase {
 
 		$this->assertNotRegExp('/cake:nocache/', $result);
 		$this->assertNotRegExp('/php echo/', $result);
-		$this->assertRegExp('/A\. Layout Before Content/', $result);
+		$this->assertRegExp('/A\. Layouts Before Content/', $result);
 		$this->assertRegExp('/B\. In Plain Element/', $result);
-		$this->assertRegExp('/C\. Layout After Test Element/', $result);
+		$this->assertRegExp('/C\. Layouts After Test Element/', $result);
 		$this->assertRegExp('/D\. In View File/', $result);
-		$this->assertRegExp('/E\. Layout After Content/', $result);
+		$this->assertRegExp('/E\. Layouts After Content/', $result);
 		$this->assertRegExp('/F\. In Element With No Cache Tags/', $result);
-		$this->assertRegExp('/G\. Layout After Content And After Element With No Cache Tags/', $result);
+		$this->assertRegExp('/G\. Layouts After Content And After Element With No Cache Tags/', $result);
 		$this->assertNotRegExp('/1\. layout before content/', $result);
 		$this->assertNotRegExp('/2\. in plain element/', $result);
 		$this->assertNotRegExp('/3\. layout after test element/', $result);
@@ -267,13 +267,13 @@ class CacheHelperTest extends CakeTestCase {
 		$contents = file_get_contents($filename);
 		unlink($filename);
 
-		$this->assertRegExp('/A\. Layout Before Content/', $contents);
+		$this->assertRegExp('/A\. Layouts Before Content/', $contents);
 		$this->assertNotRegExp('/B\. In Plain Element/', $contents);
-		$this->assertRegExp('/C\. Layout After Test Element/', $contents);
+		$this->assertRegExp('/C\. Layouts After Test Element/', $contents);
 		$this->assertRegExp('/D\. In View File/', $contents);
-		$this->assertRegExp('/E\. Layout After Content/', $contents);
+		$this->assertRegExp('/E\. Layouts After Content/', $contents);
 		$this->assertRegExp('/F\. In Element With No Cache Tags/', $contents);
-		$this->assertRegExp('/G\. Layout After Content And After Element With No Cache Tags/', $contents);
+		$this->assertRegExp('/G\. Layouts After Content And After Element With No Cache Tags/', $contents);
 		$this->assertRegExp('/1\. layout before content/', $contents);
 		$this->assertNotRegExp('/2\. in plain element/', $contents);
 		$this->assertRegExp('/3\. layout after test element/', $contents);

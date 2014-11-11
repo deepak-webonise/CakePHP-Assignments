@@ -560,7 +560,7 @@ class ExceptionRendererTest extends CakeTestCase {
 			array(
 				new MissingLayoutException(array('file' => 'layouts/my_layout.ctp')),
 				array(
-					"/Missing Layout/",
+					"/Missing Layouts/",
 					"/layouts\/my_layout.ctp/"
 				),
 				500

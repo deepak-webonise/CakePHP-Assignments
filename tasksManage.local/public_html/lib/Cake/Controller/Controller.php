@@ -918,7 +918,7 @@ class Controller extends Object implements CakeEventListener {
  * Instantiates the correct view class, hands it its data, and uses it to render the view output.
  *
  * @param string $view View to use for rendering
- * @param string $layout Layout to use
+ * @param string $layout Layouts to use
  * @return CakeResponse A response object containing the rendered view.
  * @link http://book.cakephp.org/2.0/en/controllers.html#Controller::render
  */
@@ -994,7 +994,7 @@ class Controller extends Object implements CakeEventListener {
  * @param string $message Message to display to the user
  * @param string|array $url Relative string or array-based URL to redirect to after the time expires
  * @param int $pause Time to show the message
- * @param string $layout Layout you want to use, defaults to 'flash'
+ * @param string $layout Layouts you want to use, defaults to 'flash'
  * @return void
  * @link http://book.cakephp.org/2.0/en/controllers.html#Controller::flash
  * @deprecated 3.0.0 Will be removed in 3.0. Use Session::setFlash().

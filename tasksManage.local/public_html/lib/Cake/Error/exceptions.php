@@ -343,7 +343,7 @@ class MissingViewException extends CakeException {
  */
 class MissingLayoutException extends CakeException {
 
-	protected $_messageTemplate = 'Layout file "%s" is missing.';
+	protected $_messageTemplate = 'Layouts file "%s" is missing.';
 
 }
 
