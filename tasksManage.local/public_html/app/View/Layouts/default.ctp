@@ -11,8 +11,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<title>
 		<?php echo $cakeDescription ?>:
 		<?php echo $this->fetch('title'); ?>
-	</title>
-	<?php
+
+    </title>
+    <?php
+        echo $this->Html->script('jquery-1.11.1.min');
+        echo $this->Html->script('jquery.validate');
+        echo $this->Html->script('bootstrap');
+
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('bootstrap');
@@ -30,13 +35,46 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li><?php echo $this->Html->link('Home','/') ?></li>
-                <li><?php echo $this->Html->link('Tasks',array('controller'=>'tasks')) ?></li>
-                <li><?php echo $this->Html->link('Technologies',array('controller'=>'technologies')) ?></li>
+                <li class="dropdown">
+                    <a href="tasks/" class="dropdown-toggle" data-toggle="dropdown">Tasks <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><?php echo $this->Html->link('List All',array('controller'=>'tasks','action'=>'listTasks')) ?></li>
+                        <li><?php echo $this->Html->link('Add',array('controller'=>'tasks','action'=>'add')) ?></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="tasks/" class="dropdown-toggle" data-toggle="dropdown">Technologies <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><?php echo $this->Html->link('List All',array('controller'=>'technologies','action'=>'index')) ?></li>
+                        <li><?php echo $this->Html->link('Add',array('controller'=>'technologies','action'=>'add')) ?></li>
+
+                    </ul>
+                </li>
+
                 <?php
                     if($this->Session->read('Auth.User')){
+                        $user = $this->Session->read('Auth.User');
+
+                        echo '<li class="dropdown">';
+                        echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">'.$user['User']['username'].'<span class="caret"></span></a>';
+                        echo '<ul class="dropdown-menu" role="menu">';
+
+                        echo '<li>';
+                        echo $this->Html->link('Dashboard',array('controller'=>'Users','action'=>'dashboard'));
+                        echo '</li>';
+
+
+                        echo '<li>';
+                        echo $this->Html->link('Add User',array('controller'=>'Users','action'=>'add'));
+                        echo '</li>';
+
                         echo '<li>';
                         echo $this->Html->link('Logout',array('controller'=>'Users','action'=>'logout'));
                         echo '</li>';
+
+                        echo '</ul></li>';
+
                     }
                     else{
                         echo '<li>';
@@ -45,7 +83,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                     }
 
                 ?>
-
 
             </ul>
 
@@ -59,10 +96,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="footer">
 
 
-				<?php $this->Html->script('bootstrap');?>
 
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>

@@ -9,23 +9,25 @@
 
 class Task extends AppModel {
 
-   /* public $validate = array(
+    public $validate = array(
         'title' => array(
-            'required'=> 'true',
+            'rule' => array('minLength',5),
+            'required' =>true,
+            'allowEmpty'=> false,
+            'message' => 'Please enter valid title'
         ),
         'duration' => array(
-            'required' => 'true'
+            'numeric' => array(
+                'rule' => 'numeric',
+                'message' => 'Please enter valid numeric number'
+            )
         ),
         'comments' => array(
-            'required' => 'true'
-        ),
-        'technology_id' => array(
-            'required' => 'true'
-        ),
-        'type_id' => array(
-            'required' =>'true'
+            'rule' => array('minLength',5),
+            'required' => true,
+            'message' => 'Please enter valid comments'
         )
-    );*/
+    );
     public $belongsTo = array(
         'Technology' => array(
             'className' => 'Technology',
@@ -36,9 +38,9 @@ class Task extends AppModel {
             'foreignKey' => 'Type_id'
         )
     );
-    public $virtualFields = array(
-        'task_count' => 'COUNT(id)'
-    );
+
+    public $actAs = array('Containable');
+
 
     /**
      * @return array order by date
@@ -50,22 +52,37 @@ class Task extends AppModel {
             'conditions' => array('created=CURDATE()'),
             'fields' => array('id','title','created'),
             'order' => 'created desc',
-            'limit' => 10,
+            'limit' => 5
 
         ));
+    }
+
+    public function listTasks(){
+
+        return $this->find('all',array(
+            'recursive' => -1,
+            'fields'=> array('id','title','created'),
+            'order' => 'created desc'
+        ));
+
     }
 
     /**
      * count the number of tasks by grouping created date
      * @return array
      */
+   /* public $virtualFields = array(
+        'task_count' => 'COUNT(Task.id)'
+    );*/
     public function taskByGroup(){
 
-        return $this->find('all', array(
+         return $this->find('all', array(
            'recursive' => -1,
-           'fields' => array('created', 'task_count'),
+           'fields' => array('created', '(COUNT(Task.id)) as task_count'),
            'order' => 'created desc',
-           'group' => 'created'
+           'group' => 'created',
+           'limit' => 5
+
         ));
     }
 
@@ -79,7 +96,7 @@ class Task extends AppModel {
         if(!empty($id)){
             return $this->find('first',array(
                 'recursive' => -1,
-                'condition' => array('Task.id' => $id)
+                'conditions' => array('Task.id' => $id),
             ));
         }
 
@@ -126,6 +143,28 @@ class Task extends AppModel {
             }
         }
         return false;
+    }
+
+    public function recentTasks(){
+
+
+
+        $toDateObj = new DateTime();
+        $toDateObj->sub(date_interval_create_from_date_string('1 days'));
+        $toDate = $toDateObj->format('Y-m-d');
+        $fromDateObj = new DateTime();
+        $fromDateObj->sub(date_interval_create_from_date_string('7 days'));
+        $fromDate = $fromDateObj->format('Y-m-d');
+        $condition = "created BETWEEN ' ".$fromDate."' AND '".$toDate." '";
+
+        return $this->find('all',array(
+            'recursive' => -1,
+            'conditions' => array($condition),
+            'fields' => array('id','title','created'),
+            'order' => 'created desc',
+
+
+        ));
     }
 
 }

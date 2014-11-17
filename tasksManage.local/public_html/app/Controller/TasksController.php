@@ -8,14 +8,31 @@
  */
 class TasksController extends AppController {
 
+    public $components = array('Paginator');
 
+    public $paginate = array(
+
+        'limit' => 5,
+        'contain' => 'Technology.name',
+        'order' => 'Task.created desc'
+    );
     /**
      * Description : categories the tasks by date and group
      */
     public function index(){
 
+        $data = Hash::combine($this->Task->taskByGroup(), '{n}.Task.created','{n}.0.task_count');
+        $this->set('group',$data);
         $this->set('tasks',$this->Task->taskByDate());
-        $this->set('group',$this->Task->taskByGroup());
+
+
+    }
+
+    public function listTasks(){
+
+        $this->Paginator->paginate('Task');
+
+       // $this->set('tasks2',$this->Task->listTasks());
     }
 
     /**
@@ -23,7 +40,8 @@ class TasksController extends AppController {
      */
 
     public function beforeFilter(){
-        $this->Auth->allow('index', 'view');
+        $this->Auth->allow('index', 'view','listTasks');
+
 
     }
 
@@ -45,42 +63,44 @@ class TasksController extends AppController {
         if($this->request->is('post')){
             if(!empty($this->request->data)){
                 if($this->Task->addTask($this->request->data)){
-                    $this->Session->setFlash("Task added successfully.");
-                    return $this->redirect(array('action'=>'index'));
+                    $this->Session->setFlash('<p class="text-success">Task added successfully.</p>');
+                    return $this->redirect(array('action'=>'listTasks'));
                 }
             }
+            $this->Session->setFlash('<p class="text-danger">Unsuccessul to add new task. Try Again.</p>');
         }
     }
 
     /**
      * @param null $id
      * @throws NotFoundException
-     * update tasks
+     * Description : update tasks
      */
     public function edit($id = null){
-        $this->loadModel('Technology');
-        $this->loadModel('Type');
+
         /*Load Technologies*/
-        $technologies = $this->Technology->find('list');
+        $technologies = $this->Task->Technology->find('list');
         $this->set(compact('technologies'));
 
         /*Load Types*/
-        $types = $this->Type->find('list');
+        $types = $this->Task->Type->find('list');
         $this->set(compact('types'));
 
         $task = $this->Task->findById($id);
 
-        if(!$task){
+        if(empty($task)){
             throw new NotFoundException(__('Invalid Post'));
         }
         if($this->request->is(array('post','put'))){
             if($this->Task->editTask($this->request->data)){
-                $this->Session->setFlash('Updated Successfully');
-                $this->redirect(array('action'=>'index'));
+                $this->Session->setFlash('<p class="text-success">Updated Successfully</p>');
+                $this->redirect(array('action'=>'listTasks'));
             }
+            $this->Session->setFlash('<p class="text-danger">Updated Unsuccessful.</p>');
+
         }
 
-        if(!$this->request->data)
+        if(empty($this->request->data))
         {
             $this->request->data = $task;
         }
@@ -92,10 +112,24 @@ class TasksController extends AppController {
      */
     public function view($id=null)
     {
-       if(!$id){
-           throw new NotFoundException(__('Invalid Post'));
+       if(!empty($id)){
+           $task = $this->Task->taskById($id);
+           if(!empty($task)){
+               $this->set('task',$task);
+           }
+           else{
+               $this->Session->setFlash('<p class="text-danger">Please select valid task from following</p>');
+               $this->redirect(array('action'=>'listTasks'));
+           }
+
        }
-        $this->set('task',$this->Task->taskById($id));
+       else
+       {
+           $this->Session->setFlash('<p class="text-danger">Please select valid task from following</p>');
+           $this->redirect(array('action'=>'listTasks'));
+       }
+
+
     }
 
     /**
@@ -110,7 +144,7 @@ class TasksController extends AppController {
         if($id){
             if($this->Task->deleteTask($id)){
                 $this->Session->setFlash('Task Deleted Successfully');
-                return $this->redirect(array('action'=>'index'));
+                return $this->redirect(array('action'=>'listTasks'));
             }
         }
     }

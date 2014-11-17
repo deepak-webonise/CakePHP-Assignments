@@ -106,5 +106,12 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
-//CakePlugin::load('AclExtras');
+CakePlugin::load('AclExtras');
 CakePlugin::load(array('MicroSave'));
+CakePlugin::load(array( # or CakePlugin::loadAll(array(
+    'CakeResque' => array('bootstrap' => array(
+        'bootstrap_config',
+        '../../../Config/cake_resque_config', # Path to your own config file
+        'bootstrap')
+    )
+));

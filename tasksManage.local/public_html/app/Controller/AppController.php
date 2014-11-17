@@ -38,14 +38,26 @@ class AppController extends Controller {
             'authorize' => array(
                 'Actions' => array('actionPath' => 'controllers/')
             ),
-            'authenticate' => array('Form'),
+            'authenticate' => array('Form'=> array ('userModel' => 'User')),
         ),
 
         'Session'
     );
 
-    public function beforeFilter(){
+     public function beforeFilter(){
+
+         $user = $this->Session->read('Auth.User');
+
+        if($user) {
+
+            $aco = 'controllers/'.ucfirst($this->request->controller);
+            $aro = array('model'=>'Group','foreign_key'=> $user['User']['group_id']);
+            if($this->Acl->check($aro,$aco)){
+
+                return;
+            }
+            $this->Session->setFlash('<p class="text-danger">Permission Denied</p>');
+        }
 
     }
-
 }
