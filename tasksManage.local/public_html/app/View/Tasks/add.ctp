@@ -39,18 +39,20 @@ $(document).ready(function(e){
 });
     </script>
     <div class="col-lg-3">
-        <form action="/tasks/add" method="post" id="TaskAddForm" name='TaskAddForm' novalidate="novalidate">
+        <?php echo $this->Form->create('Task',array('novalidate'=>'novalidate')); ?>
             <div class="form-group">
-                <label class="control-label" for="data[Task][title]">Title</label>
-                <input name="data[Task][title]" id="data[Task][title]" type="text" class="form-control"/>
+                <label class="control-label" for="TaskTitle">Title</label>
+                <?php echo $this->Form->input('title',array('class'=>'form-control','label'=>false));?>
             </div>
             <div class="form-group">
-                <label class="control-label" for="data[Task][duration]">Duration</label>
-                <input  name="data[Task][duration]" id="data[Task][duration]" type="number" class="form-control"/>
+                <label class="control-label" for="TaskDuration">Duration(hrs)</label>
+                <!-- <input  name="data[Task][duration]" id="TaskDuration" type="number" class="form-control"/> -->
+                <?php echo $this->Form->input('duration',array('class'=>'form-control','label'=>false));?>
             </div>
             <div class="form-group">
-                <label class="control-label" for="data[Task][comments]">Comments</label>
-                <textarea name="data[Task][comments]" id="data[Task][comments]" type="text" class="form-control"/> </textarea>
+                <label class="control-label" for="TaskComments">Comments</label>
+               <!-- <textarea name="data[Task][comments]" id="TaskComments" type="text" class="form-control"/> </textarea> -->
+                <?php echo $this->Form->textarea('comments',array('class'=>'form-control','label'=>false));?>
             </div>
             <div class="form-group">
                 <label class="control-label">Technology</label>
@@ -65,8 +67,8 @@ $(document).ready(function(e){
                 ?>
             </div>
 
-            <button type="submit" id="sub">Add</button>
-        </form>
+            <button type="submit" class="btn btn-primary">Add</button>
+       <?php echo $this->Form->end();?>
     </div>
 
 

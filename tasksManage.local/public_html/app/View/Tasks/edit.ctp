@@ -59,7 +59,8 @@
             ?>
         </div>
 
-        <button class="btn-default" type="submit" id="sub">Update</button>
+        <button class="btn btn-primary" type="submit" id="sub">Update</button>
+        <?php echo $this->Form->end();?>
     </form>
 </div>
 

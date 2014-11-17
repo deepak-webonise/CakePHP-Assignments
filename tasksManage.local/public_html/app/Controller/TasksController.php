@@ -8,14 +8,16 @@
  */
 class TasksController extends AppController {
 
-    public $components = array('Paginator');
+    public $components = array('Paginator','SearchMaster.Prg');
 
-    public $paginate = array(
-
-        'limit' => 5,
-        'contain' => 'Technology.name',
-        'order' => 'Task.created desc'
+    public $presetVars = array(
+        'title' => array(
+            'type' => 'like'
+        )
     );
+
+
+
     /**
      * Description : categories the tasks by date and group
      */
@@ -30,9 +32,53 @@ class TasksController extends AppController {
 
     public function listTasks(){
 
-        $this->Paginator->paginate('Task');
+        $condition = array();
+        $technologies = $this->Task->Technology->find('list');
+        $this->set(compact('technologies'));
 
-       // $this->set('tasks2',$this->Task->listTasks());
+        /*Load Types*/
+        $types = $this->Task->Type->find('list');
+        $this->set(compact('types'));
+
+        if($this->request->is('post')){
+
+            if(!empty($this->request->data['type_id'])){
+                if(count($condition) >= 1){
+                    $condition[count($condition)] = 'Task.type_id ='.$this->request->data['type_id'];
+                }
+                else{
+                    $condition[0]  = 'Task.type_id ='.$this->request->data['type_id'];
+                }
+            }
+            if(!empty($this->request->data['technology_id'])){
+                if(count($condition) >= 1){
+                    $condition[count($condition)] = ' Task.technology_id ='.$this->request->data['technology_id'];
+                }
+                else{
+                    $condition[0]  = 'Task.technology_id ='.$this->request->data['technology_id'];
+                }
+            }
+            if(!empty($this->request->data['created'])){
+                if(count($condition) >= 1){
+                    $condition[count($condition)] = "Task.created =  ' ".$this->request->data['created']." ' ";
+                }
+                else{
+                    $condition[0]  = "Task.created =  ' ".$this->request->data['created']." ' ";
+                }
+            }
+
+        }
+
+        $this->paginate = array(
+            'limit' => 5,
+            'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name'),
+            'conditions' => $condition,
+            'order' => 'Task.created desc'
+        );
+
+        $this->set('tasksList',$this->paginate());
+
+
     }
 
     /**
@@ -43,6 +89,7 @@ class TasksController extends AppController {
         $this->Auth->allow('index', 'view','listTasks');
 
 
+
     }
 
     /**
@@ -50,14 +97,13 @@ class TasksController extends AppController {
      */
     public function add(){
 
-        $this->loadModel('Technology');
-        $this->loadModel('Type');
+
         /*Load Technologies*/
-        $technologies = $this->Technology->find('list');
+        $technologies = $this->Task->Technology->find('list');
         $this->set(compact('technologies'));
 
         /*Load Types*/
-        $types = $this->Type->find('list');
+        $types = $this->Task->Type->find('list');
         $this->set(compact('types'));
 
         if($this->request->is('post')){

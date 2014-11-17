@@ -39,11 +39,12 @@ class Task extends AppModel {
         )
     );
 
-    public $actAs = array('Containable');
+    public $actAs = array('Containable','SearchMaster.Searchable');
 
 
     /**
      * @return array order by date
+     * Description : return current date tasks
      */
     public function taskByDate()
     {
@@ -145,10 +146,11 @@ class Task extends AppModel {
         return false;
     }
 
+    /**
+     * @return array
+     * Description : Return recent 7 days tasks
+     */
     public function recentTasks(){
-
-
-
         $toDateObj = new DateTime();
         $toDateObj->sub(date_interval_create_from_date_string('1 days'));
         $toDate = $toDateObj->format('Y-m-d');

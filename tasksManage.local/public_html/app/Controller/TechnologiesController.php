@@ -57,11 +57,11 @@ class TechnologiesController extends AppController {
         }
         if($id){
             if($this->Technology->deleteTechnology($id)){
-                $this->Session->setFlash('Technology Deleted Successfully');
+                $this->Session->setFlash('<p class="text-success">Technology Deleted Successfully</p>');
                 $this->redirect(array('action'=>'index'));
             }
         }
-        $this->Session->setFlash('Technology Deleted Unsuccessfully');
+        $this->Session->setFlash('p class="text-danger">Technology Deleted Unsuccessfully</p>');
         $this->redirect(array('action'=>'index'));
 
     }

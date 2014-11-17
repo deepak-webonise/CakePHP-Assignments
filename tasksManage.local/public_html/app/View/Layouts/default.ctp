@@ -66,10 +66,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 
                         echo '<li>';
-                        echo $this->Html->link('Add User',array('controller'=>'Users','action'=>'add'));
-                        echo '</li>';
-
-                        echo '<li>';
                         echo $this->Html->link('Logout',array('controller'=>'Users','action'=>'logout'));
                         echo '</li>';
 
@@ -99,6 +95,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		</div>
 	</div>
-	<?php //echo $this->element('sql_dump'); ?>
+	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

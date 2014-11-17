@@ -107,8 +107,9 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 CakePlugin::load('AclExtras');
+CakePlugin::load('Migrations');
 CakePlugin::load(array('MicroSave'));
-CakePlugin::load(array( # or CakePlugin::loadAll(array(
+CakePlugin::load(array(
     'CakeResque' => array('bootstrap' => array(
         'bootstrap_config',
         '../../../Config/cake_resque_config', # Path to your own config file
