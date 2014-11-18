@@ -28,6 +28,7 @@ class Task extends AppModel {
             'message' => 'Please enter valid comments'
         )
     );
+
     public $belongsTo = array(
         'Technology' => array(
             'className' => 'Technology',
@@ -36,10 +37,14 @@ class Task extends AppModel {
         'Type' => array(
             'className' => 'Type',
             'foreignKey' => 'Type_id'
+        ),
+        'User' => array(
+            'className' => 'User',
+            'foreignKey' => 'user_id'
         )
     );
 
-    public $actAs = array('Containable','SearchMaster.Searchable');
+    public $actAs = array('Containable');
 
 
     /**
@@ -48,9 +53,12 @@ class Task extends AppModel {
      */
     public function taskByDate()
     {
+        $curDateObj = new DateTime();
+        $curDateObj = $curDateObj->format('Y-m-d');
+
         return $this->find('all',array(
             'recursive' => -1,
-            'conditions' => array('created=CURDATE()'),
+            'conditions' => array("created LIKE '".$curDateObj."%'"),
             'fields' => array('id','title','created'),
             'order' => 'created desc',
             'limit' => 5
@@ -111,7 +119,7 @@ class Task extends AppModel {
 
         if(!empty($data)){
             $this->create($data);
-            $this->set(array('created' => date('Y-m-d'),
+            $this->set(array('created' => date('Y-m-d H-i-s'),
             'modified' => date('Y-m-d')));
             if($this->save($data)){
                 return true;
@@ -150,23 +158,38 @@ class Task extends AppModel {
      * @return array
      * Description : Return recent 7 days tasks
      */
-    public function recentTasks(){
+    public function recentTasks($user_id = null){
+        $condition = array();
         $toDateObj = new DateTime();
         $toDateObj->sub(date_interval_create_from_date_string('1 days'));
         $toDate = $toDateObj->format('Y-m-d');
         $fromDateObj = new DateTime();
         $fromDateObj->sub(date_interval_create_from_date_string('7 days'));
         $fromDate = $fromDateObj->format('Y-m-d');
-        $condition = "created BETWEEN ' ".$fromDate."' AND '".$toDate." '";
+
+        $condition[0] = "created BETWEEN ' ".$fromDate."' AND '".$toDate." '";
+
+        if(!empty($user_id)){
+            $condition[1] = 'user_id = '.$user_id;
+
+        }
 
         return $this->find('all',array(
             'recursive' => -1,
-            'conditions' => array($condition),
+            'conditions' => $condition,
             'fields' => array('id','title','created'),
             'order' => 'created desc',
 
 
         ));
+    }
+
+    public function groupByDate(){
+
+        return $this->query("SELECT * FROM tasks GROUP BY created");
+
+
+
     }
 
 }

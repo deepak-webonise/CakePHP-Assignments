@@ -41,27 +41,27 @@ $(document).ready(function(e){
     <div class="col-lg-3">
         <?php echo $this->Form->create('Task',array('novalidate'=>'novalidate')); ?>
             <div class="form-group">
-                <label class="control-label" for="TaskTitle">Title</label>
+                <label class="control-label" for="TaskTitle">Title*</label>
                 <?php echo $this->Form->input('title',array('class'=>'form-control','label'=>false));?>
             </div>
             <div class="form-group">
-                <label class="control-label" for="TaskDuration">Duration(hrs)</label>
+                <label class="control-label" for="TaskDuration">Duration(hrs)*</label>
                 <!-- <input  name="data[Task][duration]" id="TaskDuration" type="number" class="form-control"/> -->
                 <?php echo $this->Form->input('duration',array('class'=>'form-control','label'=>false));?>
             </div>
             <div class="form-group">
-                <label class="control-label" for="TaskComments">Comments</label>
+                <label class="control-label" for="TaskComments">Comments*</label>
                <!-- <textarea name="data[Task][comments]" id="TaskComments" type="text" class="form-control"/> </textarea> -->
                 <?php echo $this->Form->textarea('comments',array('class'=>'form-control','label'=>false));?>
             </div>
             <div class="form-group">
-                <label class="control-label">Technology</label>
+                <label class="control-label">Technology*</label>
                 <?php
                     echo $this->Form->input('technology_id',array('class'=>'form-control','label'=>false,'name'=>'data[Task][technology_id]'));
                 ?>
             </div>
             <div class="form-group">
-                <label class="control-label">Category</label>
+                <label class="control-label">Category*</label>
                 <?php
                     echo $this->Form->input('type_id',array('class'=>'form-control','label'=>false,'name'=>'data[Task][type_id]'));
                 ?>

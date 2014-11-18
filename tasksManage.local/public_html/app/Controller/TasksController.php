@@ -8,7 +8,7 @@
  */
 class TasksController extends AppController {
 
-    public $components = array('Paginator','SearchMaster.Prg');
+    public $components = array('Paginator');
 
     public $presetVars = array(
         'title' => array(
@@ -22,17 +22,85 @@ class TasksController extends AppController {
      * Description : categories the tasks by date and group
      */
     public function index(){
-
+        $result = $this->Task->groupByDate();
         $data = Hash::combine($this->Task->taskByGroup(), '{n}.Task.created','{n}.0.task_count');
         $this->set('group',$data);
-        $this->set('tasks',$this->Task->taskByDate());
+    }
+
+    /**
+     * Description : return list of tasks
+     */
+    public function listTasks(){
+
+        $user_id = $this->Auth->user('User.id');
+
+        if($user_id == 1){
+            $this->redirect(array('action'=>'adminListTasks'));
+        }
+        $condition[0] = 'user_id = '.$user_id;
+
+        $technologies = $this->Task->Technology->find('list');
+        $this->set(compact('technologies'));
+
+        /*Load Types*/
+        $types = $this->Task->Type->find('list');
+        $this->set(compact('types'));
+
+        // Setting search options
+
+        if($this->request->is('post')){
+
+            if(!empty($this->request->data['Task']['type_id'])){
+                if(count($condition) >= 1){
+                    $condition[count($condition)] = 'Task.type_id ='.$this->request->data['Task']['type_id'];
+                }
+                else{
+                    $condition[0]  = 'Task.type_id ='.$this->request->data['Task']['type_id'];
+                }
+            }
+            if(!empty($this->request->data['Task']['technology_id'])){
+                if(count($condition) >= 1){
+                    $condition[count($condition)] = ' Task.technology_id ='.$this->request->data['Task']['technology_id'];
+                }
+                else{
+                    $condition[0]  = 'Task.technology_id ='.$this->request->data['Task']['technology_id'];
+                }
+            }
+            if(!empty($this->request->data['created'])){
+                if(count($condition) >= 1){
+                    $condition[count($condition)] = "Task.created LIKE '".$this->request->data['created']." %' ";
+                }
+                else{
+                    $condition[0]  = "Task.created LIKE  '".$this->request->data['created']." %' ";
+                }
+            }
+
+        }
+
+        $this->paginate = array(
+            'limit' => 5,
+            'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name'),
+            'conditions' => $condition,
+            'order' => 'Task.created desc'
+        );
+
+        try{
+            $this->set('tasksList',$this->paginate());
+        }catch (NotFoundException $e){
+            $this->redirect(array('action'=>'listTasks'));
+        }
+
 
 
     }
 
-    public function listTasks(){
+    /**
+     * Description : Display all tasks to admin
+     */
+    public function adminListTasks(){
 
         $condition = array();
+
         $technologies = $this->Task->Technology->find('list');
         $this->set(compact('technologies'));
 
@@ -71,13 +139,15 @@ class TasksController extends AppController {
 
         $this->paginate = array(
             'limit' => 5,
-            'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name'),
+            'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name','User.username'),
             'conditions' => $condition,
             'order' => 'Task.created desc'
         );
-
-        $this->set('tasksList',$this->paginate());
-
+        try{
+            $this->set('tasksList',$this->paginate());
+        }catch (NotFoundException $e){
+            $this->redirect(array('action'=>'listTasks'));
+        }
 
     }
 
@@ -87,15 +157,14 @@ class TasksController extends AppController {
 
     public function beforeFilter(){
         $this->Auth->allow('index', 'view','listTasks');
-
-
-
     }
 
     /**
      * Add new task
      */
     public function add(){
+
+        $user_id = $this->Auth->user('User.id');
 
 
         /*Load Technologies*/
@@ -107,6 +176,7 @@ class TasksController extends AppController {
         $this->set(compact('types'));
 
         if($this->request->is('post')){
+            $this->request->data['Task']['user_id'] = $user_id;
             if(!empty($this->request->data)){
                 if($this->Task->addTask($this->request->data)){
                     $this->Session->setFlash('<p class="text-success">Task added successfully.</p>');
@@ -116,6 +186,7 @@ class TasksController extends AppController {
             $this->Session->setFlash('<p class="text-danger">Unsuccessul to add new task. Try Again.</p>');
         }
     }
+
 
     /**
      * @param null $id
@@ -152,6 +223,7 @@ class TasksController extends AppController {
         }
     }
 
+
     /**
      * @param null $id
      * @throws NotFoundException
@@ -178,6 +250,7 @@ class TasksController extends AppController {
 
     }
 
+
     /**
      * @param null $id
      * @throws MethodNotAllowedException
@@ -189,11 +262,18 @@ class TasksController extends AppController {
         }
         if($id){
             if($this->Task->deleteTask($id)){
-                $this->Session->setFlash('Task Deleted Successfully');
+                $this->Session->setFlash('<p class="text-success">Task Deleted Successfully</p>');
+                return $this->redirect(array('action'=>'listTasks'));
+            }
+            else{
+                $this->Session->setFlash('<p class="text-success">Unsuccessfull to Delete</p>');
                 return $this->redirect(array('action'=>'listTasks'));
             }
         }
     }
+
+
+
 
 
 }

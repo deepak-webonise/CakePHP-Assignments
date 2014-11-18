@@ -5737,3 +5737,610 @@ Request URL: /css/bootstrap.css.map
 Stack Trace:
 #0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-11-17 18:58:43 Error: [MissingPluginException] Plugin SearchMaster could not be found.
+Exception Attributes: array (
+  'plugin' => 'SearchMaster',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(227): CakePlugin::path('SearchMaster')
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'SearchMaster')
+#2 [internal function]: App::load('PrgComponent')
+#3 [internal function]: spl_autoload_call('PrgComponent')
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Controller/ComponentCollection.php(110): class_exists('PrgComponent')
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SearchMaster.Pr...', Array)
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(TasksController))
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#8 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#9 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-17 18:59:31 Error: [MissingPluginException] Plugin SearchMaster could not be found.
+Exception Attributes: array (
+  'plugin' => 'SearchMaster',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(227): CakePlugin::path('SearchMaster')
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'SearchMaster')
+#2 [internal function]: App::load('PrgComponent')
+#3 [internal function]: spl_autoload_call('PrgComponent')
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Controller/ComponentCollection.php(110): class_exists('PrgComponent')
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SearchMaster.Pr...', Array)
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(TasksController))
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#8 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#9 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-17 18:59:36 Error: [MissingPluginException] Plugin SearchMaster could not be found.
+Exception Attributes: array (
+  'plugin' => 'SearchMaster',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(227): CakePlugin::path('SearchMaster')
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'SearchMaster')
+#2 [internal function]: App::load('PrgComponent')
+#3 [internal function]: spl_autoload_call('PrgComponent')
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Controller/ComponentCollection.php(110): class_exists('PrgComponent')
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SearchMaster.Pr...', Array)
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(TasksController))
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#8 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#9 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-17 19:05:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:05:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:05:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:05:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:06:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:06:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:06:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:06:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:06:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:07:02 Error: [BadRequestException] The request has been black-holed
+Request URL: /tasks/edit/19
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(TasksController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(TasksController))
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#8 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-11-17 19:07:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:07:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:07:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:07:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:08:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:08:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:08:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:08:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:09:14 Error: [BadRequestException] The request has been black-holed
+Request URL: /tasks/listTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(TasksController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(TasksController))
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#8 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-11-17 19:14:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:30 Error: [NotFoundException] Not Found
+Request URL: /tasks/listTasks/page:6
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(1080): PaginatorComponent->paginate(NULL, Array, Array)
+#1 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(79): Controller->paginate()
+#2 [internal function]: TasksController->listTasks()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#6 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-11-17 19:15:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:15:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:16:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:16:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:25:46 Error: [BadRequestException] The request has been black-holed
+Request URL: /tasks/listTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(TasksController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(TasksController))
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#8 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-11-17 19:28:22 Error: [BadRequestException] The request has been black-holed
+Request URL: /tasks/listTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(TasksController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(TasksController))
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#8 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-11-17 19:32:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:34:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:34:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 19:55:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`task_management`.`tasks`, CONSTRAINT `tasks_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ta...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ta...')
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Task), Array, Array)
+#4 /var/www/tasksManage.local/public_html/app/Model/Task.php(116): Model->save(Array)
+#5 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(110): Task->addTask(Array)
+#6 [internal function]: TasksController->add()
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-11-17 19:58:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`task_management`.`tasks`, CONSTRAINT `tasks_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ta...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ta...')
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Task), Array, Array)
+#4 /var/www/tasksManage.local/public_html/app/Model/Task.php(116): Model->save(Array)
+#5 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(110): Task->addTask(Array)
+#6 [internal function]: TasksController->add()
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-11-17 19:58:20 Error: [BadRequestException] The request has been black-holed
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(TasksController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(TasksController))
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#8 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-11-17 20:04:19 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/tasksManage.local/public_html/app/Controller/TasksController.php, line 36]
+2014-11-17 20:04:19 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /tasks/listTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/tasksM...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/tasksM...', 36, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/tasksM...', 36, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-17 20:39:05 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/tasksManage.local/public_html/app/Controller/TasksController.php, line 125]
+2014-11-17 20:39:05 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /tasks/adminListTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/tasksM...', 125)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/tasksM...', 125, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/tasksM...', 125, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-17 20:41:14 Error: [MissingControllerException] Controller class AdminListTasksController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminListTasksController',
+  'plugin' => NULL,
+)
+Request URL: /adminListTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 20:43:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'field list'
+Request URL: /tasks/adminListTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Task`.`...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(1080): PaginatorComponent->paginate(NULL, Array, Array)
+#8 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(131): Controller->paginate()
+#9 [internal function]: TasksController->adminListTasks()
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#13 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-18 09:38:54 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/tasksManage.local/public_html/app/Model/Task.php, line 169]
+2014-11-18 09:38:54 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /users/dashboard
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/tasksM...', 169)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/tasksM...', 169, Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/tasksM...', 169, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 10:16:37 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Users/admin_dashboard.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Users/admin_dashboard.ctp',
+)
+Request URL: /Users/adminDashboard
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 10:17:53 Error: [MissingViewException] View file "/var/www/tasksManage.local/public_html/app/View/Users/admin_dashboard.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/tasksManage.local/public_html/app/View/Users/admin_dashboard.ctp',
+)
+Request URL: /Users/adminDashboard
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 14:42:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 14:45:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 14:45:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND  `Task`.`technology_id` =1   ORDER BY `Task`.`created` desc  LIMIT 5' at line 1
+Request URL: /tasks/listTasks
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 /var/www/tasksManage.local/public_html/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Task`.`...', false)
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Task), Array)
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(1080): PaginatorComponent->paginate(NULL, Array, Array)
+#8 /var/www/tasksManage.local/public_html/app/Controller/TasksController.php(87): Controller->paginate()
+#9 [internal function]: TasksController->listTasks()
+#10 /var/www/tasksManage.local/public_html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#11 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/tasksManage.local/public_html/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#13 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-18 14:45:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 14:46:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 14:46:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 14:59:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 14:59:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/tasksManage.local/public_html/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

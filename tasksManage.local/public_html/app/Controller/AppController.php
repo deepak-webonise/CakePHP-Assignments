@@ -32,7 +32,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     public $components = array(
-        'Security',
+
         'Acl',
         'Auth' => array(
             'authorize' => array(
@@ -46,31 +46,22 @@ class AppController extends Controller {
 
      public function beforeFilter(){
 
-       $this->Security->blackHoleCallback = 'blackhole';
-       $user = $this->Session->read('Auth.User');
+        $user = $this->Session->read('Auth.User');
 
         if($user) {
 
-            $aco = 'controllers/'.Inflector::camelize($this->request->controller);
-            $aro = array('model'=>'Group','foreign_key'=> $user['User']['group_id']);
-            if($this->Acl->check($aro,$aco)){
+            $aco = 'controllers/'.Inflector::camelize($this->request->controller);    //requested aco (controller) by user
+            $aro = array('model'=>'Group','foreign_key'=> $user['User']['group_id']);//fetching aro group
+            if($this->Acl->check($aro,$aco)){ //permission check
 
                 return;
             }
-            $this->Session->setFlash('<p class="text-danger">Permission Denied</p>');
+            $this->Session->setFlash('<p class="text-danger text-center">Permission Denied</p>');
         }
 
      }
 
-    public function blackhole($type){
 
-        switch($type){
-            case 'auth':
-                $this->Session->setFlash('<p class="text-danger">Permission Denied</p>');
-                break;
-        }
-
-    }
 
 
 }

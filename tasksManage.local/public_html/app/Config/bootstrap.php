@@ -107,6 +107,7 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 CakePlugin::load('AclExtras');
+CakePlugin::load('SearchMaster');
 CakePlugin::load('Migrations');
 CakePlugin::load(array('MicroSave'));
 CakePlugin::load(array(

@@ -7,6 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 class Technology extends AppModel {
+
     public $hasMany = array(
         'Tasks'=> array(
             'className' =>'Task',
@@ -57,6 +58,11 @@ class Technology extends AppModel {
 
     }
 
+    /**
+     * @param $data
+     * @return bool
+     */
+
     public function editTechnology($data){
         if(!empty($data)){
             $this->set(array('modified' => date('Y-m-d')));
@@ -68,6 +74,11 @@ class Technology extends AppModel {
 
     }
 
+
+    /**
+     * @param null $id
+     * @return bool
+     */
     public function deleteTechnology($id = null){
 
         if(!empty($id)){

@@ -14,6 +14,10 @@ class TechnologiesController extends AppController {
        $this->set('technologies', $this->Technology->showAll());
     }
 
+    /**
+     * add new technology.
+     */
+
     public function add(){
         if($this->request->is('post')){
             if($this->Technology->addTechynology($this->request->data)){
@@ -25,6 +29,12 @@ class TechnologiesController extends AppController {
 
     }
 
+
+    /**
+     * @param null $id
+     * @throws NotFoundException
+     * Description : Edit existing technology
+     */
     public function edit($id = null){
 
         $tech = $this->Technology->findTechById($id);
@@ -48,6 +58,10 @@ class TechnologiesController extends AppController {
 
     }
 
+
+    /**
+     * @param null $id
+     */
     public function delete($id = null){
 
 
@@ -61,7 +75,7 @@ class TechnologiesController extends AppController {
                 $this->redirect(array('action'=>'index'));
             }
         }
-        $this->Session->setFlash('p class="text-danger">Technology Deleted Unsuccessfully</p>');
+        $this->Session->setFlash('<p class="text-danger">Technology Deleted Unsuccessfully</p>');
         $this->redirect(array('action'=>'index'));
 
     }

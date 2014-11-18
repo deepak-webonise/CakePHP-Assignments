@@ -34,6 +34,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 <?php echo $this->Html->link($cakeDescription, '#'); ?>
             </div>
             <ul class="nav navbar-nav navbar-right">
+            <?php if($this->Session->read('Auth.User')){ ?>
+
                 <li><?php echo $this->Html->link('Home','/') ?></li>
                 <li class="dropdown">
                     <a href="tasks/" class="dropdown-toggle" data-toggle="dropdown">Tasks <span class="caret"></span></a>
@@ -53,6 +55,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 </li>
 
                 <?php
+                    }
+
                     if($this->Session->read('Auth.User')){
                         $user = $this->Session->read('Auth.User');
 
