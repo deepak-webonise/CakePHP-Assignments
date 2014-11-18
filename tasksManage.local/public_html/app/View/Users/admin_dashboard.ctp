@@ -50,7 +50,13 @@
 
         <?php
 
+        $curdate = date('Y-m-d');
         foreach($recentTasks as $task){
+            if($curdate != date("Y-m-d",strtotime($task['Task']['created']))){
+                echo '<tr><td><h4>'.date("Y-m-d",strtotime($task['Task']['created'])).'</h4><td></tr>';
+                $curdate = date("Y-m-d",strtotime($task['Task']['created']));
+            }
+
 
             echo '<tr>';
             echo '<td>'.$this->Html->link($task['Task']['id'],array('controller'=>'tasks','action' => 'view',$task['Task']['id'])).'</td>';

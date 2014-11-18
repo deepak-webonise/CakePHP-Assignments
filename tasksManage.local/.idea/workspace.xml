@@ -23,11 +23,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TasksController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TasksController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/app/Controller/TasksController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="41" selection-start="6960" selection-end="6960" vertical-scroll-proportion="0.76620823">
+            <state line="172" column="0" selection-start="5283" selection-end="5283" vertical-scroll-proportion="27.5">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/Controller/UsersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="59" selection-start="2656" selection-end="2656" vertical-scroll-proportion="-16.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="0" selection-start="2477" selection-end="2712" vertical-scroll-proportion="-4.4166665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_dashboard.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="13" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.25531915">
+              <folding>
+                <marker date="1416318818303" expanded="true" signature="1655:1678" placeholder="..." />
+                <marker date="1416318818303" expanded="true" signature="1779:1805" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +75,17 @@
         <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.541666">
-              <folding />
+              <folding>
+                <marker date="1416234661201" expanded="true" signature="48:864" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="168:305" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="361:485" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="540:678" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="721:854" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="890:2872" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="916:2319" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="2330:2866" placeholder="..." />
+                <marker date="1416234661201" expanded="true" signature="2362:2850" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public_html/app/View/Tasks/add.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp" />
         <option value="$PROJECT_DIR$/public_html/app/View/Technologies/add.ctp" />
         <option value="$PROJECT_DIR$/public_html/app/View/Technologies/edit.ctp" />
         <option value="$PROJECT_DIR$/public_html/app/View/Users/adminDashboard.ctp" />
@@ -76,6 +114,8 @@
         <option value="$PROJECT_DIR$/public_html/app/Model/User.php" />
         <option value="$PROJECT_DIR$/public_html/app/View/Users/add.ctp" />
         <option value="$PROJECT_DIR$/public_html/app/Controller/TasksController.php" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp" />
       </list>
     </option>
   </component>
@@ -631,8 +671,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961948" sideWeight="0.3338983" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.304414" sideWeight="0.96949154" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.030508475" sideWeight="0.49695587" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.304414" sideWeight="0.54067796" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45932204" sideWeight="0.49695587" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25342464" sideWeight="0.36271188" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4977169" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -697,17 +737,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="225" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp</url>
+          <line>78</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="229" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/View/Technologies/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.75">
@@ -778,20 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2201139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/view.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -802,14 +828,48 @@
     <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.541666">
-          <folding />
+          <folding>
+            <marker date="1416234661201" expanded="true" signature="48:864" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="168:305" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="361:485" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="540:678" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="721:854" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="890:2872" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="916:2319" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="2330:2866" placeholder="..." />
+            <marker date="1416234661201" expanded="true" signature="2362:2850" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/Controller/TasksController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="41" selection-start="6960" selection-end="6960" vertical-scroll-proportion="0.76620823">
+        <state line="172" column="0" selection-start="5283" selection-end="5283" vertical-scroll-proportion="27.5">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="59" selection-start="2656" selection-end="2656" vertical-scroll-proportion="-16.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="2477" selection-end="2712" vertical-scroll-proportion="-4.4166665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="13" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.25531915">
+          <folding>
+            <marker date="1416318818303" expanded="true" signature="1655:1678" placeholder="..." />
+            <marker date="1416318818303" expanded="true" signature="1779:1805" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
