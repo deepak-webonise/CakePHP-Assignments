@@ -1,7 +1,7 @@
 <h2>Edit Task</h2>
 <script type="text/javascript">
 
-    $(document).ready(function(e){
+    $(document).ready(function(){
 
         $("#TaskEditForm").validate({
 
@@ -10,22 +10,29 @@
                     required: true,
                     minlength: 4,
                     maxlength:30
-                },
-                "data[Task][duration]" : {
-                    required: true,
-                    minlength:1,
-                    maxlength:2
-
-                },
-                "data[Task][comments]" : {
-                    required: true,
-                    maxlength:100,
-                    minlength:5
-
                 }
             },
             submitHandler: function(form) {
-                form.submit();
+                var formData = $("#TaskEditForm").serialize();
+                // alert(formData);
+                console.log(formData);
+
+                var formUrl = $("#TaskEditForm").attr('action');
+                //alert(formUrl);
+                $.ajax({
+                    type:'post',
+                    url:formUrl,
+                    data:formData,
+                    success: function(data,textStatus,xhr){
+                        alert(data);
+                    },
+                    error: function(data,textStatus,xhr){
+                        alert('error');
+
+                    }
+
+                });
+                return false;
             }
         });
     });
@@ -34,25 +41,25 @@
     <?php echo $this->Form->create('Task', array('novalidate'=>'novalidate')); ?>
    <!-- <form action="/tasks/add" method="post" id="TaskAddForm" name='TaskAddForm' novalidate="novalidate">-->
         <div class="form-group">
-            <label class="control-label" for="data[Task][title]">Title*</label>
+            <label class="control-label" for="TaskTitle">Title*</label>
             <?php echo $this->Form->input('title',array('class'=>'form-control','label'=>false)); ?>
         </div>
         <div class="form-group">
-            <label class="control-label" for="data[Task][duration]">Duration*</label>
+            <label class="control-label" for="TaskDuration">Duration</label>
            <?php echo $this->Form->input('duration',array('class'=>'form-control','label'=>false)); ?>
         </div>
         <div class="form-group">
-            <label class="control-label" for="data[Task][comments]">Comments*</label>
+            <label class="control-label" for="TaskComments">Comments</label>
            <?php echo $this->Form->input('comments',array('class'=>'form-control','label'=>false));?>
         </div>
         <div class="form-group">
-            <label class="control-label">Technology*</label>
+            <label class="control-label">Technology</label>
             <?php
             echo $this->Form->input('technology_id',array('class'=>'form-control','label'=>false,'name'=>'data[Task][technology_id]'));
             ?>
         </div>
         <div class="form-group">
-            <label class="control-label">Category*</label>
+            <label class="control-label">Category</label>
             <?php
                 echo $this->Form->input('type_id',array('class'=>'form-control','label'=>false,'name'=>'data[Task][type_id]'));
 

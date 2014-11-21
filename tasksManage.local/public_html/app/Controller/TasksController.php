@@ -8,23 +8,24 @@
  */
 class TasksController extends AppController {
 
-    public $components = array('Paginator');
+    public $components = array('Paginator','RequestHandler');
+
+    public $helpers = array('Html','Js','Form');
 
     public $presetVars = array(
-        'title' => array(
+        array(
+            'field' => 'title',
             'type' => 'like'
         )
     );
-
-
 
     /**
      * Description : categories the tasks by date and group
      */
     public function index(){
-        $result = $this->Task->groupByDate();
-        $data = Hash::combine($this->Task->taskByGroup(), '{n}.Task.created','{n}.0.task_count');
-        $this->set('group',$data);
+        $result = $this->Task->taskByGroup();
+        //$data = Hash::combine($this->Task->taskByGroup(), '{n}.Task.created','{n}.0.task_count');
+        $this->set('group',$this->Task->taskByGroup());
     }
 
     /**
@@ -32,66 +33,47 @@ class TasksController extends AppController {
      */
     public function listTasks(){
 
-        $user_id = $this->Auth->user('User.id');
+        $condition = array();
+        $condition = $this->returnSearchCondition();
 
-        if($user_id == 1){
-            $this->redirect(array('action'=>'adminListTasks'));
+        if(empty($this->passedArgs)){
+
+            $this->Session->write('pgCondition',$condition);
+
         }
-        $condition[0] = 'user_id = '.$user_id;
-
-        $technologies = $this->Task->Technology->find('list');
-        $this->set(compact('technologies'));
-
-        /*Load Types*/
-        $types = $this->Task->Type->find('list');
-        $this->set(compact('types'));
 
         // Setting search options
 
         if($this->request->is('post')){
 
-            if(!empty($this->request->data['Task']['type_id'])){
-                if(count($condition) >= 1){
-                    $condition[count($condition)] = 'Task.type_id ='.$this->request->data['Task']['type_id'];
-                }
-                else{
-                    $condition[0]  = 'Task.type_id ='.$this->request->data['Task']['type_id'];
-                }
-            }
-            if(!empty($this->request->data['Task']['technology_id'])){
-                if(count($condition) >= 1){
-                    $condition[count($condition)] = ' Task.technology_id ='.$this->request->data['Task']['technology_id'];
-                }
-                else{
-                    $condition[0]  = 'Task.technology_id ='.$this->request->data['Task']['technology_id'];
-                }
-            }
-            if(!empty($this->request->data['created'])){
-                if(count($condition) >= 1){
-                    $condition[count($condition)] = "Task.created LIKE '".$this->request->data['created']." %' ";
-                }
-                else{
-                    $condition[0]  = "Task.created LIKE  '".$this->request->data['created']." %' ";
-                }
-            }
+            $condition = $this->returnSearchCondition();
 
+            $this->Session->write('pgCondition',$condition);
+
+            $this->paginate = array(
+                'limit' => 5,
+                'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name'),
+                'conditions' => $condition,
+                'order' => 'Task.created desc',
+
+            );
         }
 
-        $this->paginate = array(
-            'limit' => 5,
-            'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name'),
-            'conditions' => $condition,
-            'order' => 'Task.created desc'
-        );
+        if($this->request->is('get')){
+            $this->paginate = array(
+                'limit' => 5,
+                'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name'),
+                'conditions' => $this->Session->read('pgCondition'),
+                'order' => 'Task.created desc',
+
+            );
+        }
 
         try{
             $this->set('tasksList',$this->paginate());
         }catch (NotFoundException $e){
             $this->redirect(array('action'=>'listTasks'));
         }
-
-
-
     }
 
     /**
@@ -110,30 +92,16 @@ class TasksController extends AppController {
 
         if($this->request->is('post')){
 
-            if(!empty($this->request->data['type_id'])){
-                if(count($condition) >= 1){
-                    $condition[count($condition)] = 'Task.type_id ='.$this->request->data['type_id'];
-                }
-                else{
-                    $condition[0]  = 'Task.type_id ='.$this->request->data['type_id'];
-                }
-            }
-            if(!empty($this->request->data['technology_id'])){
-                if(count($condition) >= 1){
-                    $condition[count($condition)] = ' Task.technology_id ='.$this->request->data['technology_id'];
-                }
-                else{
-                    $condition[0]  = 'Task.technology_id ='.$this->request->data['technology_id'];
-                }
-            }
-            if(!empty($this->request->data['created'])){
-                if(count($condition) >= 1){
-                    $condition[count($condition)] = "Task.created =  ' ".$this->request->data['created']." ' ";
-                }
-                else{
-                    $condition[0]  = "Task.created =  ' ".$this->request->data['created']." ' ";
-                }
-            }
+            $condition = $this->returnSearchCondition();
+
+            $this->Session->write('pgCondition',$condition);
+
+            $this->paginate = array(
+                'limit' => 5,
+                'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name'),
+                'conditions' => $condition,
+                'order' => 'Task.created desc'
+            );
 
         }
 
@@ -141,7 +109,8 @@ class TasksController extends AppController {
             'limit' => 5,
             'fields' => array('Task.id','Task.title','Task.created','Technology.name','Type.name','User.username'),
             'conditions' => $condition,
-            'order' => 'Task.created desc'
+            'order' => 'Task.created desc',
+
         );
         try{
             $this->set('tasksList',$this->paginate());
@@ -152,38 +121,28 @@ class TasksController extends AppController {
     }
 
     /**
-     * Allow index action to all
-     */
-
-    public function beforeFilter(){
-        $this->Auth->allow('index', 'view','listTasks');
-    }
-
-    /**
      * Add new task
      */
     public function add(){
 
         $user_id = $this->Auth->user('User.id');
 
+        $this->layout = 'ajax';
+        $this->autoRender = false;
 
-        /*Load Technologies*/
-        $technologies = $this->Task->Technology->find('list');
-        $this->set(compact('technologies'));
-
-        /*Load Types*/
-        $types = $this->Task->Type->find('list');
-        $this->set(compact('types'));
-
-        if($this->request->is('post')){
+        if($this->request->is('ajax')){
             $this->request->data['Task']['user_id'] = $user_id;
             if(!empty($this->request->data)){
                 if($this->Task->addTask($this->request->data)){
-                    $this->Session->setFlash('<p class="text-success">Task added successfully.</p>');
-                    return $this->redirect(array('action'=>'listTasks'));
+
+                   //$this->Task->getLastInsertedId();
+                  echo "success";
+
+                }
+                else{
+                    echo 'fail';
                 }
             }
-            $this->Session->setFlash('<p class="text-danger">Unsuccessul to add new task. Try Again.</p>');
         }
     }
 
@@ -206,15 +165,16 @@ class TasksController extends AppController {
         $task = $this->Task->findById($id);
 
         if(empty($task)){
-            throw new NotFoundException(__('Invalid Post'));
+            throw new NotFoundException(__('Invalid Task'));
         }
-        if($this->request->is(array('post','put'))){
+        if($this->request->is(array('ajax'))){
             if($this->Task->editTask($this->request->data)){
-                $this->Session->setFlash('<p class="text-success">Updated Successfully</p>');
-                $this->redirect(array('action'=>'listTasks'));
-            }
-            $this->Session->setFlash('<p class="text-danger">Updated Unsuccessful.</p>');
+                echo 'success';
 
+            }
+            else{
+                echo 'fail';
+            }
         }
 
         if(empty($this->request->data))
@@ -239,15 +199,12 @@ class TasksController extends AppController {
                $this->Session->setFlash('<p class="text-danger">Please select valid task from following</p>');
                $this->redirect(array('action'=>'listTasks'));
            }
-
        }
        else
        {
            $this->Session->setFlash('<p class="text-danger">Please select valid task from following</p>');
            $this->redirect(array('action'=>'listTasks'));
        }
-
-
     }
 
 
@@ -272,8 +229,34 @@ class TasksController extends AppController {
         }
     }
 
+    /**
+     * @return mixed
+     * Description : Return user selected criteria for filtering data.
+     */
 
 
+    public function returnSearchCondition(){
 
+        $condition = array();
+        $user_id = $this->Auth->user('User.id');
+
+        if($user_id != '1'){
+            array_push($condition,'Task.user_id = '.$user_id);
+        }
+
+
+        if(!empty($this->request->data['Task']['Type'])){
+            array_push( $condition,"Type.name LIKE '%".$this->request->data['Task']['Type']."%'");
+        }
+        if(!empty($this->request->data['Task']['Technology'])){
+            array_push($condition,"Technology.name LIKE '%".$this->request->data['Task']['Technology']."%'");
+        }
+        if(!empty($this->request->data['created'])){
+            array_push($condition,"Task.created LIKE '".$this->request->data['created']." %' ");
+        }
+
+        return $condition;
+
+    }
 
 }

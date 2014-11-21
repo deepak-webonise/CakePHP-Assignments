@@ -21,7 +21,7 @@ class UsersController extends AppController {
 
     }
     public function index(){
-
+        $this->User->notify();
 
     }
 
@@ -32,16 +32,16 @@ class UsersController extends AppController {
         if($this->Session->read('Auth.User')){
                 $this->redirect(array('action'=>'dashboard'));
         }
-        if ($this->request->is('post')) {
-            if(!empty($this->request->data)){
-                $userData = $this->User->userAuthenticate($this->request->data);
-                if($userData){
-                    if ($this->Auth->login($userData)) {
-                       $this->redirect(array('controller'=>'users','action'=>'dashboard'));
-                    }
+        if ($this->request->is('post') && !empty($this->request->data)) {
+
+            $userData = $this->User->userAuthenticate($this->request->data);
+            if($userData){
+                if ($this->Auth->login($userData)) {
+                   $this->redirect(array('controller'=>'users','action'=>'dashboard'));
                 }
-                $this->Session->setFlash(__('<p class="text-danger text-center">Invalid username or password.</p>'));
             }
+            $this->Session->setFlash(__('<p class="text-danger text-center">Invalid username or password.</p>'));
+
         }
     }
 
@@ -65,6 +65,7 @@ class UsersController extends AppController {
 
             if($this->User->addUser($this->request->data)){
                 $this->Session->setFlash('<p class="text-success">Successfully Registered</p>');
+                $this->redirect(array('action'=>'login'));
 
             } else {
 

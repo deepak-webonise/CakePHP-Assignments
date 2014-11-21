@@ -7,7 +7,7 @@
     if(!empty($todayTasks)){
         ?>
         <table class="table">
-            <th>Id</th>
+
             <th>Title</th>
             <th>Created On</th>
             <th></th>
@@ -18,7 +18,7 @@
             foreach($todayTasks as $task){
 
                 echo '<tr>';
-                echo '<td>'.$this->Html->link($task['Task']['id'],array('action' => 'view',$task['Task']['id'])).'</td>';
+              //  echo '<td>'.$this->Html->link($task['Task']['id'],array('action' => 'view',$task['Task']['id'])).'</td>';
                 echo '<td>'.$this->Html->link($task['Task']['title'],array('action' => 'view',$task['Task']['id'])).'</td>';
                 echo '<td>'.$task['Task']['created'].'</td>';
                 if($this->Session->read('Auth.User')){

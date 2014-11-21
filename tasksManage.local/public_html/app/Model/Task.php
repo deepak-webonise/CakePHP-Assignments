@@ -9,25 +9,14 @@
 
 class Task extends AppModel {
 
-    public $validate = array(
-        'title' => array(
-            'rule' => array('minLength',5),
-            'required' =>true,
-            'allowEmpty'=> false,
-            'message' => 'Please enter valid title'
-        ),
-        'duration' => array(
-            'numeric' => array(
-                'rule' => 'numeric',
-                'message' => 'Please enter valid numeric number'
-            )
-        ),
-        'comments' => array(
-            'rule' => array('minLength',5),
-            'required' => true,
-            'message' => 'Please enter valid comments'
-        )
-    );
+     /*public $validate = array(
+         'title' => array(
+             'rule' => array('minLength',4),
+             'required' =>true,
+             'allowEmpty'=> false,
+             'message' => 'Please enter valid title'
+         )
+    );*/
 
     public $belongsTo = array(
         'Technology' => array(
@@ -44,7 +33,13 @@ class Task extends AppModel {
         )
     );
 
-    public $actAs = array('Containable');
+    public $actAs = array('Search.Searchable');
+
+   /* public $filterArgs = array(
+        array('name' => 'title','type'=>'like')
+    );*/
+
+
 
 
     /**
@@ -66,6 +61,10 @@ class Task extends AppModel {
         ));
     }
 
+    /*
+     * return list of tasks
+     */
+
     public function listTasks(){
 
         return $this->find('all',array(
@@ -80,16 +79,17 @@ class Task extends AppModel {
      * count the number of tasks by grouping created date
      * @return array
      */
-   /* public $virtualFields = array(
-        'task_count' => 'COUNT(Task.id)'
-    );*/
+
     public function taskByGroup(){
+
+        $this->virtualFields = array(
+            'task_count' => 'COUNT(Task.id)');
 
          return $this->find('all', array(
            'recursive' => -1,
-           'fields' => array('created', '(COUNT(Task.id)) as task_count'),
+           'fields' => array('created', 'task_count'),
            'order' => 'created desc',
-           'group' => 'created',
+           'group' => 'DATE(created)',
            'limit' => 5
 
         ));
@@ -117,11 +117,15 @@ class Task extends AppModel {
      */
     public function addTask($data) {
 
+
+
         if(!empty($data)){
-            $this->create($data);
+
             $this->set(array('created' => date('Y-m-d H-i-s'),
-            'modified' => date('Y-m-d')));
+            'modified' => date('Y-m-d H-i-s')));
+            $this->create();
             if($this->save($data)){
+
                 return true;
             }
         }

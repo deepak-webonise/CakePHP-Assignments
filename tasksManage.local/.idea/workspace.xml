@@ -1,10 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/public_html/app/Controller/UsersController.php" description="}" line="91" />
+    <bookmark url="file://$PROJECT_DIR$/public_html/app/Controller/UsersController.php" description="}" line="92" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="954b80f6-d9b1-4b3b-af6c-131c596332f2" name="Default" comment="" />
+    <list default="true" id="954b80f6-d9b1-4b3b-af6c-131c596332f2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/app/Config/email.php.default" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_tasks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_users" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_default_en-us" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/.semver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Controller/Component/PrgComponent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Docs/Documentation/Configuration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Docs/Documentation/Examples.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Docs/Documentation/Installation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Docs/Documentation/Overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Docs/Documentation/Post-Redirect-Get.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Docs/Home.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Docs/Tutorials/Quick-Start.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Locale/deu/LC_MESSAGES/search.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Locale/fre/LC_MESSAGES/search.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Locale/por/LC_MESSAGES/search.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Locale/rus/LC_MESSAGES/search.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Locale/search.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Locale/spa/LC_MESSAGES/search.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Model/Behavior/SearchableBehavior.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Test/Case/AllSearchTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Test/Case/Controller/Component/PrgComponentTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Test/Case/Model/Behavior/SearchableBehaviorTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Test/Fixture/ArticleFixture.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Test/Fixture/PostFixture.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Test/Fixture/TagFixture.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/Test/Fixture/TaggedFixture.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/plugins/SearchMaster/composer.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Config/bootstrap.php" afterPath="$PROJECT_DIR$/public_html/app/Config/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Console/Command/UserShell.php" afterPath="$PROJECT_DIR$/public_html/app/Console/Command/UserShell.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Controller/AppController.php" afterPath="$PROJECT_DIR$/public_html/app/Controller/AppController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Controller/TasksController.php" afterPath="$PROJECT_DIR$/public_html/app/Controller/TasksController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Controller/TechnologiesController.php" afterPath="$PROJECT_DIR$/public_html/app/Controller/TechnologiesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Controller/TypesController.php" afterPath="$PROJECT_DIR$/public_html/app/Controller/TypesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Controller/UsersController.php" afterPath="$PROJECT_DIR$/public_html/app/Controller/UsersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/Model/Task.php" afterPath="$PROJECT_DIR$/public_html/app/Model/Task.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Layouts/default.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Layouts/default.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Tasks/add.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Tasks/add.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Tasks/admin_list_tasks.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Tasks/admin_list_tasks.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Tasks/edit.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Tasks/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Tasks/index.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Tasks/index.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Technologies/index.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Technologies/index.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp" afterPath="$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_acos" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_acos" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_aros" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_aros" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_aros_acos" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_aros_acos" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_list" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_technologies" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_technologies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_types" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/models/myapp_cake_model_default_task_management_types" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_cake_dev_en-us" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_cake_dev_en-us" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_cake_en-us" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_cake_en-us" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_file_map" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_file_map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_method_cache" afterPath="$PROJECT_DIR$/public_html/app/tmp/cache/persistent/myapp_cake_core_method_cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/logs/error.log" afterPath="$PROJECT_DIR$/public_html/app/tmp/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/tmp/logs/resque-worker-error.log" afterPath="$PROJECT_DIR$/public_html/app/tmp/logs/resque-worker-error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/app/webroot/css/bootstrap.css" afterPath="$PROJECT_DIR$/public_html/app/webroot/css/bootstrap.css" />
+    </list>
     <ignored path="tasksManage.local.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,72 +86,82 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="TasksController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/app/Controller/TasksController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="0" selection-start="5283" selection-end="5283" vertical-scroll-proportion="27.5">
+            <state line="176" column="13" selection-start="4695" selection-end="4695" vertical-scroll-proportion="-110.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/app/Controller/UsersController.php">
+      <file leaf-file-name="success.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/success.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="59" selection-start="2656" selection-end="2656" vertical-scroll-proportion="-16.25">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp">
+      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Technologies/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="2477" selection-end="2712" vertical-scroll-proportion="-4.4166665">
+            <state line="20" column="9" selection-start="26" selection-end="459" vertical-scroll-proportion="-6.6666665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_dashboard.ctp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp">
+      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Technologies/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="13" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.25531915">
-              <folding>
-                <marker date="1416318818303" expanded="true" signature="1655:1678" placeholder="..." />
-                <marker date="1416318818303" expanded="true" signature="1779:1805" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/view.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="23" column="75" selection-start="619" selection-end="619" vertical-scroll-proportion="-6.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_tasks.ctp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/edit.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="29" selection-start="382" selection-end="1021" vertical-scroll-proportion="-15.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_tasks.ctp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.541666">
-              <folding>
-                <marker date="1416234661201" expanded="true" signature="48:864" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="168:305" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="361:485" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="540:678" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="721:854" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="890:2872" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="916:2319" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="2330:2866" placeholder="..." />
-                <marker date="1416234661201" expanded="true" signature="2362:2850" placeholder="..." />
-              </folding>
+            <state line="119" column="43" selection-start="2865" selection-end="2865" vertical-scroll-proportion="0.3478261">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/webroot/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6457" column="12" selection-start="140196" selection-end="140207" vertical-scroll-proportion="-7.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/Model/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="90" selection-start="3582" selection-end="3665" vertical-scroll-proportion="-16.625">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,25 +173,28 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public_html/app/View/Technologies/add.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/View/Technologies/edit.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/View/Users/adminDashboard.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/View/Tasks/admin_list_tasks.ctp" />
         <option value="$PROJECT_DIR$/public_html/app/View/Layouts/default.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/public_html/app/Controller/TechnologiesController.php" />
-        <option value="$PROJECT_DIR$/public_html/app/Controller/UsersController.php" />
-        <option value="$PROJECT_DIR$/public_html/app/Model/Task.php" />
-        <option value="$PROJECT_DIR$/public_html/app/View/Tasks/edit.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/Model/Technology.php" />
-        <option value="$PROJECT_DIR$/public_html/app/Model/User.php" />
-        <option value="$PROJECT_DIR$/public_html/app/View/Users/add.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/Controller/TasksController.php" />
-        <option value="$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp" />
         <option value="$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/Config/email.php" />
+        <option value="$PROJECT_DIR$/public_html/app/Console/Command/UserShell.php" />
+        <option value="$PROJECT_DIR$/public_html/app/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/public_html/app/Model/Task.php" />
+        <option value="$PROJECT_DIR$/public_html/app/webroot/js/jquery-ui.js" />
+        <option value="$PROJECT_DIR$/public_html/app/Controller/UsersController.php" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Tasks/edit.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Technologies/add.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Technologies/index.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Tasks/admin_list_tasks.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/Controller/TasksController.php" />
+        <option value="$PROJECT_DIR$/public_html/app/webroot/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp" />
       </list>
     </option>
   </component>
@@ -138,7 +217,7 @@
     <option name="width" value="1362" />
     <option name="height" value="742" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -181,6 +260,16 @@
               <option name="myItemId" value="tasksManage.local" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public_html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -201,6 +290,88 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Behavior" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Component" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,6 +637,118 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Errors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Emails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Emails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -532,7 +815,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Config" />
+              <option name="myItemId" value="Console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasksManage.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -555,36 +864,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Schema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasksManage.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasksManage.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Migration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -596,12 +875,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.webide.settings.project.settings.php.debug" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -616,7 +895,9 @@
   <component name="RunManager" selected="PHPUnit.tasksManage.local">
     <configuration default="false" name="tasksManage.local" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="PhpRunner" />
       <RunnerSettings RunnerId="PhpUnitDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpUnitDebugRunner" />
       <method />
     </configuration>
@@ -669,13 +950,13 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961948" sideWeight="0.3338983" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.304414" sideWeight="0.54067796" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45932204" sideWeight="0.49695587" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32039574" sideWeight="0.979661" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.49695587" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25342464" sideWeight="0.36271188" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4977169" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.4977169" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.49695587" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -737,20 +1018,61 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp</url>
-          <line>78</line>
-          <option name="timeStamp" value="226" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="229" />
+      <option name="time" value="305" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Technologies/add.ctp">
+    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.75">
+        <state line="46" column="0" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/webroot/js/jquery-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3267" column="40" selection-start="90061" selection-end="90061" vertical-scroll-proportion="-0.4732143">
+          <folding>
+            <marker date="1416546508780" expanded="false" signature="30655:30726" placeholder="..." />
+            <marker date="1416546508780" expanded="false" signature="30740:30764" placeholder="..." />
+            <marker date="1416546508780" expanded="false" signature="217708:217725" placeholder="..." />
+            <marker date="1416546508780" expanded="false" signature="231595:231611" placeholder="..." />
+            <marker date="1416546508780" expanded="true" signature="385266:385275" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/Model/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="-12.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="90" selection-start="3582" selection-end="3665" vertical-scroll-proportion="-16.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/Config/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="21" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.6923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="55" selection-start="2677" selection-end="2687" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.28846154">
           <folding />
         </state>
       </provider>
@@ -762,114 +1084,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="29" selection-start="382" selection-end="1021" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Technologies/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="9" selection-start="26" selection-end="459" vertical-scroll-proportion="-6.6666665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/View/Technologies/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="-11.875">
+        <state line="23" column="75" selection-start="619" selection-end="619" vertical-scroll-proportion="-6.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/Model/Technology.php">
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/success.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="19" selection-start="1586" selection-end="1586" vertical-scroll-proportion="-17.5">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/Model/Type.php">
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/admin_list_tasks.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="157" column="51" selection-start="4719" selection-end="4719" vertical-scroll-proportion="-29.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/Model/User.php">
+    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/TasksController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="29" selection-start="3535" selection-end="3535" vertical-scroll-proportion="-14.125">
+        <state line="176" column="13" selection-start="4695" selection-end="4695" vertical-scroll-proportion="-110.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/login.ctp">
+    <entry file="file://$PROJECT_DIR$/public_html/app/webroot/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="13.291667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Layouts/default.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="349" selection-end="349" vertical-scroll-proportion="0.4743083">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2528" selection-end="2528" vertical-scroll-proportion="1.9354838">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/view.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="6457" column="12" selection-start="140196" selection-end="140207" vertical-scroll-proportion="-7.6">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/View/Tasks/list_tasks.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.541666">
-          <folding>
-            <marker date="1416234661201" expanded="true" signature="48:864" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="168:305" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="361:485" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="540:678" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="721:854" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="890:2872" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="916:2319" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="2330:2866" placeholder="..." />
-            <marker date="1416234661201" expanded="true" signature="2362:2850" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/TasksController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="0" selection-start="5283" selection-end="5283" vertical-scroll-proportion="27.5">
+        <state line="119" column="43" selection-start="2865" selection-end="2865" vertical-scroll-proportion="0.3478261">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="59" selection-start="2656" selection-end="2656" vertical-scroll-proportion="-16.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/dashboard.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2477" selection-end="2712" vertical-scroll-proportion="-4.4166665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Users/admin_dashboard.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="13" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.25531915">
-          <folding>
-            <marker date="1416318818303" expanded="true" signature="1655:1678" placeholder="..." />
-            <marker date="1416318818303" expanded="true" signature="1779:1805" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>

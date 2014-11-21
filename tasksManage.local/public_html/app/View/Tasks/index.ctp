@@ -9,10 +9,9 @@
         <th>Date</th>
         <th>Number of Tasks</th>
         <?php
-        while($row = current($group)){
 
-            echo '<tr><td>'.key($group).'</td><td>'.$row.'</td></tr>';
-            next($group);
+        foreach($group as $row){
+        echo '<tr><td>'.$this->Time->format('d-m-Y',$row['Task']['created']).'</td><td>'.$row['Task']['task_count'].'</td></tr>';
         }
 
         ?>

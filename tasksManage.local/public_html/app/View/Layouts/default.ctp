@@ -18,6 +18,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         echo $this->Html->script('jquery.validate');
         echo $this->Html->script('bootstrap');
 
+
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('bootstrap');
@@ -34,7 +35,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 <?php echo $this->Html->link($cakeDescription, '#'); ?>
             </div>
             <ul class="nav navbar-nav navbar-right">
-            <?php if($this->Session->read('Auth.User')){ ?>
+            <?php if($this->Session->check('Auth.User')){ ?>
 
                 <li><?php echo $this->Html->link('Home','/') ?></li>
                 <li class="dropdown">

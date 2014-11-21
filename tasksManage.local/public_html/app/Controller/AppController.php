@@ -44,6 +44,7 @@ class AppController extends Controller {
         'Session'
     );
 
+
      public function beforeFilter(){
 
         $user = $this->Session->read('Auth.User');

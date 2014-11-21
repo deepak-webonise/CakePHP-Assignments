@@ -67,7 +67,7 @@ class TechnologiesController extends AppController {
 
         if($this->request->is('get')){
             $this->Session->setFlash('Invalid Operation');
-            return $this->redirect(array('action'=>'index'));
+            $this->redirect(array('action'=>'index'));
         }
         if($id){
             if($this->Technology->deleteTechnology($id)){
@@ -78,6 +78,15 @@ class TechnologiesController extends AppController {
         $this->Session->setFlash('<p class="text-danger">Technology Deleted Unsuccessfully</p>');
         $this->redirect(array('action'=>'index'));
 
+    }
+
+    public function autoCompleteList(){
+        $this->layout='ajax';
+        $this->autoRender =false;
+        if($this->request->is('ajax')){
+            $result = $this->Technology->find('list');
+            echo json_encode($result);
+        }
     }
 
 }
