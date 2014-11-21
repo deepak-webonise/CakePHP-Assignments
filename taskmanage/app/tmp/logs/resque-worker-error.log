@@ -1,0 +1,196 @@
+Warning Error: file_put_contents(Arraytmp/14158017720846): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 89]
+
+Could not write PID information to Arraytmp/14158017720846Warning Error: file_put_contents(Arraytmp/14158022857387): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 89]
+
+Could not write PID information to Arraytmp/14158022857387Warning Error: file_put_contents(Arraytmp/14158579010118): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 89]
+
+Could not write PID information to Arraytmp/14158579010118Warning Error: file_put_contents(Arraytmp/14158579279797): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 89]
+
+Could not write PID information to Arraytmp/14158579279797Warning Error: file_put_contents(Arraytmp/14158580321828): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 89]
+
+Could not write PID information to Arraytmp/14158580321828Warning Error: file_put_contents(Arraytmp/14158580564225): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 89]
+
+Could not write PID information to Arraytmp/14158580564225Arraytmp/14158583014574Warning Error: file_put_contents(Arraytmp/14158583014574): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 90]
+
+Could not write PID information to Arraytmp/14158583014574Arraytmp/14158584070477Warning Error: file_put_contents(Arraytmp/14158584070477): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 90]
+
+Could not write PID information to Arraytmp/14158584070477Arraytmp/14158587130359Warning Error: file_put_contents(Arraytmp/14158587130359): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 90]
+
+Could not write PID information to Arraytmp/14158587130359Arraytmp/14158587318134Warning Error: file_put_contents(Arraytmp/14158587318134): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 90]
+
+Could not write PID information to Arraytmp/14158587318134Arraytmp/14158587911333Warning Error: file_put_contents(Arraytmp/14158587911333): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 90]
+
+Could not write PID information to Arraytmp/14158587911333Arraytmp/14158592888805Warning Error: file_put_contents(Arraytmp/14158592888805): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 90]
+
+Could not write PID information to Arraytmp/14158592888805Arraytmp/14158593155086Warning Error: file_put_contents(Arraytmp/14158593155086): failed to open stream: No such file or directory in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque, line 90]
+
+Could not write PID information to Arraytmp/14158593155086/var/www/tasksManage.local/public_html/app/Plugin/CakeResque/tmp/14158596028709PHP Warning:  fsockopen(): unable to connect to 127.0.0.1:6379 (Connection refused) in /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php on line 59
+PHP Stack trace:
+PHP   1. {main}() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:0
+PHP   2. startWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:93
+PHP   3. Resque_Worker->work() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:102
+PHP   4. Resque_Worker->unregisterWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:260
+PHP   5. Resque_Redis->srem() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:533
+PHP   6. RedisApi->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:0
+PHP   7. Redisent->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:149
+PHP   8. fwrite() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:77
+PHP   9. ConsoleErrorHandler->handleError() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:0
+PHP  10. ConsoleErrorHandler::getStderr() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:81
+PHP  11. App::load() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:0
+PHP  12. include() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:567
+PHP  13. Resque_Worker->reestablishRedisConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:0
+PHP  14. Redisent->establishConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:429
+PHP  15. fsockopen() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:59
+
+Warning: fsockopen(): unable to connect to 127.0.0.1:6379 (Connection refused) in /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php on line 59
+
+Call Stack:
+    0.0004     677024   1. {main}() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:0
+    0.0246    5835640   2. startWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:93
+    0.0443    5991128   3. Resque_Worker->work() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:102
+29635.4309    6150016   4. Resque_Worker->unregisterWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:260
+29635.4372    6150576   5. Resque_Redis->srem() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:533
+29635.4372    6151208   6. RedisApi->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:0
+29635.4373    6152592   7. Redisent->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:149
+29635.4373    6154128   8. fwrite() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:77
+29635.5331    6156600   9. ConsoleErrorHandler->handleError() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:0
+29635.5340    6156600  10. ConsoleErrorHandler::getStderr() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:81
+29635.6243    6157296  11. App::load() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:0
+29635.7586    6247792  12. include('/var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleOutput.php') /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:567
+29635.7586    6248008  13. Resque_Worker->reestablishRedisConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:0
+29635.7610    6248008  14. Redisent->establishConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:429
+29635.7610    6248248  15. fsockopen() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:59
+
+Error: 111 - Connection refused
+#0 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(429): Redisent->establishConnection()
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleOutput.php(306): Resque_Worker->reestablishRedisConnection(13)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(567): include('/var/www/tasksM...')
+#3 [internal function]: App::load('ConsoleOutput')
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php(44): spl_autoload_call('ConsoleOutput')
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php(81): ConsoleErrorHandler::getStderr()
+#6 [internal function]: ConsoleErrorHandler->handleError(8, 'fwrite(): send ...', '/var/www/tasksM...', 77, Array)
+#7 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php(77): fwrite(Resource id #64, '*3??$4??SREM??$...')
+#8 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php(149): Redisent->__call('srem', Array)
+#9 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(533): RedisApi->__call('srem', Array)
+#10 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(533): Resque_Redis->srem('workers', 'webonise-deskto...')
+#11 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(260): Resque_Worker->unregisterWorker()
+#12 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque(102): Resque_Worker->work('5')
+#13 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque(93): startWorker('default', 1, Object(MonologInit\MonologInit), '5')
+#14 {main}
+Warning Error: fclose() expects parameter 1 to be resource, boolean given in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php, line 66]
+
+/var/www/tasksManage.local/public_html/app/Plugin/CakeResque/tmp/14164806218426sendmail: Cannot open smtp.gamil.com:587
+/var/www/tasksManage.local/public_html/app/Plugin/CakeResque/tmp/14164806985859sendmail: Cannot open smtp.gamil.com:587
+sendmail: Cannot open smtp.gamil.com:587
+sendmail: Cannot open smtp.gamil.com:587
+sendmail: Cannot open smtp.gamil.com:587
+PHP Warning:  fsockopen(): unable to connect to 127.0.0.1:6379 (Connection refused) in /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php on line 59
+PHP Warning:  fsockopen(): unable to connect to 127.0.0.1:6379 (Connection refused) in /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php on line 59
+PHP Stack trace:
+PHP Stack trace:
+PHP   1. {main}() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:0
+PHP   1. {main}() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:0
+PHP   2. startWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:93
+PHP   2. startWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:93
+PHP   3. Resque_Worker->work() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:102
+PHP   3. Resque_Worker->work() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:102
+PHP   4. Resque_Worker->unregisterWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:260
+PHP   4. Resque_Worker->unregisterWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:260
+PHP   5. Resque_Redis->srem() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:533
+PHP   5. Resque_Redis->srem() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:533
+PHP   6. RedisApi->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:0
+PHP   6. RedisApi->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:0
+PHP   7. Redisent->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:149
+PHP   7. Redisent->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:149
+PHP   8. fwrite() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:77
+PHP   8. fwrite() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:77
+PHP   9. ConsoleErrorHandler->handleError() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:0
+PHP   9. ConsoleErrorHandler->handleError() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:0
+PHP  10. ConsoleErrorHandler::getStderr() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:81
+PHP  10. ConsoleErrorHandler::getStderr() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:81
+PHP  11. App::load() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:0
+PHP  11. App::load() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:0
+PHP  12. include() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:567
+PHP  12. include() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:547
+PHP  13. Resque_Worker->reestablishRedisConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:0
+PHP  13. Resque_Worker->reestablishRedisConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:0
+PHP  14. Redisent->establishConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:429
+PHP  14. Redisent->establishConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:429
+PHP  15. fsockopen() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:59
+PHP  15. fsockopen() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:59
+
+Warning: fsockopen(): unable to connect to 127.0.0.1:6379 (Connection refused) in /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php on line 59
+
+Call Stack:
+    0.0005     682888   1. {main}() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:0
+    0.0778    5846160   2. startWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:93
+    0.0788    6001648   3. Resque_Worker->work() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:102
+13066.6066    6160520   4. Resque_Worker->unregisterWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:260
+13066.6083    6161080   5. Resque_Redis->srem() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:533
+13066.6083    6161712   6. RedisApi->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:0
+13066.6083    6163096   7. Redisent->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:149
+13066.6084    6164640   8. fwrite() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:77
+13066.6084    6167112   9. ConsoleErrorHandler->handleError() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:0
+13066.6084    6167112  10. ConsoleErrorHandler::getStderr() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:81
+13066.6310    6167808  11. App::load() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:0
+13066.6411    6258008  12. include('/var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleOutput.php') /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:567
+13066.6411    6258224  13. Resque_Worker->reestablishRedisConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:0
+13066.6417    6258224  14. Redisent->establishConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:429
+13066.6417    6258464  15. fsockopen() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:59
+
+
+Warning: fsockopen(): unable to connect to 127.0.0.1:6379 (Connection refused) in /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php on line 59
+
+Call Stack:
+    0.0003     682888   1. {main}() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:0
+    0.0193    5851008   2. startWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:93
+    0.0203    6006560   3. Resque_Worker->work() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque:102
+12989.9064    6165096   4. Resque_Worker->unregisterWorker() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:260
+12989.9077    6165656   5. Resque_Redis->srem() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:533
+12989.9077    6166288   6. RedisApi->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:0
+12989.9077    6167672   7. Redisent->__call() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php:149
+12989.9077    6169216   8. fwrite() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:77
+12989.9078    6171688   9. ConsoleErrorHandler->handleError() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:0
+12989.9078    6171688  10. ConsoleErrorHandler::getStderr() /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php:81
+12989.9308    6172384  11. App::load() /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:0
+12989.9409    6260248  12. include('/var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleOutput.php') /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php:547
+12989.9409    6260464  13. Resque_Worker->reestablishRedisConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:0
+12989.9415    6260464  14. Redisent->establishConnection() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php:429
+12989.9415    6260704  15. fsockopen() /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php:59
+
+Error: 111 - Connection refused
+#0 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(429): Redisent->establishConnection()
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleOutput.php(306): Resque_Worker->reestablishRedisConnection(13)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(567): include('/var/www/tasksM...')
+#3 [internal function]: App::load('ConsoleOutput')
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php(44): spl_autoload_call('ConsoleOutput')
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php(81): ConsoleErrorHandler::getStderr()
+#6 [internal function]: ConsoleErrorHandler->handleError(8, 'fwrite(): send ...', '/var/www/tasksM...', 77, Array)
+#7 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php(77): fwrite(Resource id #64, '*3??$4??SREM??$...')
+#8 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php(149): Redisent->__call('srem', Array)
+#9 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(533): RedisApi->__call('srem', Array)
+#10 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(533): Resque_Redis->srem('workers', 'webonise-deskto...')
+#11 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(260): Resque_Worker->unregisterWorker()
+#12 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque(102): Resque_Worker->work('5')
+#13 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque(93): startWorker('default', 1, Object(MonologInit\MonologInit), '5')
+#14 {main}
+Error: 111 - Connection refused
+#0 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(429): Redisent->establishConnection()
+#1 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleOutput.php(306): Resque_Worker->reestablishRedisConnection(13)
+#2 /var/www/tasksManage.local/public_html/lib/Cake/Core/App.php(547): include('/var/www/tasksM...')
+#3 [internal function]: App::load('ConsoleOutput')
+#4 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php(44): spl_autoload_call('ConsoleOutput')
+#5 /var/www/tasksManage.local/public_html/lib/Cake/Console/ConsoleErrorHandler.php(81): ConsoleErrorHandler::getStderr()
+#6 [internal function]: ConsoleErrorHandler->handleError(8, 'fwrite(): send ...', '/var/www/tasksM...', 77, Array)
+#7 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php(77): fwrite(Resource id #64, '*3??$4??SREM??$...')
+#8 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php(149): Redisent->__call('srem', Array)
+#9 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(533): RedisApi->__call('srem', Array)
+#10 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(533): Resque_Redis->srem('workers', 'webonise-deskto...')
+#11 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Resque/Worker.php(260): Resque_Worker->unregisterWorker()
+#12 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque(102): Resque_Worker->work('5')
+#13 /var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/bin/resque(93): startWorker('default', 1, Object(MonologInit\MonologInit), '5')
+#14 {main}
+Warning Error: fclose() expects parameter 1 to be resource, boolean given in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php, line 66]
+
+Warning Error: fclose() expects parameter 1 to be resource, boolean given in [/var/www/tasksManage.local/public_html/app/Vendor/kamisama/php-resque-ex/lib/Redisent/Redisent.php, line 66]
+
