@@ -1,0 +1,2 @@
+1416288633
+a:3:{i:0;b:0;s:4:"name";a:5:{s:32:"60ddd13586646c42f0d3c0e5b0c1b55e";s:17:"`task_management`";s:32:"82bfc9ded86b949a0576684fcb86f51e";s:16:"`Task`.`created`";s:32:"36102f1c0bb87707b3d267dbd0cc7029";s:7:"`tasks`";s:32:"24921a6f16a30924ecbf5f57ba267fc6";s:6:"`Task`";s:32:"d20e7bceeb0135a07432718f0d5096d7";s:9:"`created`";}s:6:"fields";a:1:{s:32:"9eff3fefe45d664370c29cc611e9f0e9";a:2:{i:0;s:16:"`Task`.`created`";i:1;s:30:"(COUNT(Task.id)) as task_count";}}}
